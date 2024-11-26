@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rik\\source\\repos\\YouMove-RikDecan\\YouMove-RikDecan\\YouMove-RikDecan.csproj": {}
+    "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\YouMove-RikDecan\\YouMove-RikDecan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rik\\source\\repos\\YouMove-RikDecan\\YouMove-RikDecan\\YouMove-RikDecan.csproj": {
+    "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\YouMove-RikDecan\\YouMove-RikDecan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rik\\source\\repos\\YouMove-RikDecan\\YouMove-RikDecan\\YouMove-RikDecan.csproj",
+        "projectUniqueName": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\YouMove-RikDecan\\YouMove-RikDecan.csproj",
         "projectName": "YouMove-RikDecan",
-        "projectPath": "C:\\Users\\Rik\\source\\repos\\YouMove-RikDecan\\YouMove-RikDecan\\YouMove-RikDecan.csproj",
+        "projectPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\YouMove-RikDecan\\YouMove-RikDecan.csproj",
         "packagesPath": "C:\\Users\\Rik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rik\\source\\repos\\YouMove-RikDecan\\YouMove-RikDecan\\obj\\",
+        "outputPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\YouMove-RikDecan\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rik\\AppData\\Roaming\\NuGet\\NuGet.Config",

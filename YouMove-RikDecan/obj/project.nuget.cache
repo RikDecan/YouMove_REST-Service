@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O5pLmwdwU2o=",
+  "dgSpecHash": "y8OxT7e22K4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rik\\source\\repos\\YouMove-RikDecan\\YouMove-RikDecan\\YouMove-RikDecan.csproj",
+  "projectFilePath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\YouMove-RikDecan\\YouMove-RikDecan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rik\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Rik\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
