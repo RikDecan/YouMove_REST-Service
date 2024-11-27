@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YouMove-RikDecan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+100e8a7986ee39761fecbfa2d6bfe002f7ce29ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9611c9a467ddee7721d0942cbfc0487bc3e52030")]
 [assembly: System.Reflection.AssemblyProductAttribute("YouMove-RikDecan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YouMove-RikDecan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
