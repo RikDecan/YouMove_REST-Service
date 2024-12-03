@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouMove-RikDecan", "YouMove-RikDecan\YouMove-RikDecan.csproj", "{F271C45F-DED2-4400-A6C3-04A27A4222F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YouMove-RikDecan", "YouMove-RikDecan\YouMove-RikDecan.csproj", "{F271C45F-DED2-4400-A6C3-04A27A4222F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymDL", "GymDL\GymDL.csproj", "{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymBL", "GymBL\GymBL.csproj", "{7E0FFD76-8B68-4D74-B4D0-635D0F365203}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F271C45F-DED2-4400-A6C3-04A27A4222F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F271C45F-DED2-4400-A6C3-04A27A4222F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F271C45F-DED2-4400-A6C3-04A27A4222F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0FFD76-8B68-4D74-B4D0-635D0F365203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0FFD76-8B68-4D74-B4D0-635D0F365203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0FFD76-8B68-4D74-B4D0-635D0F365203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0FFD76-8B68-4D74-B4D0-635D0F365203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
