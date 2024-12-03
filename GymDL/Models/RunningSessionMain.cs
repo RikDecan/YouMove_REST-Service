@@ -1,4 +1,4 @@
-﻿namespace YouMove_RikDecan.Models
+﻿namespace GymDL.Models
 {
     public class RunningSessionMain
     {
@@ -7,6 +7,8 @@
         public int MemberId { get; set; }
         public int Duration { get; set; }
         public float AvgSpeed { get; set; }
+
+        ICollection<RunningSessionDetail> RunningSessionDetails { get; set; }
 
     }
 }

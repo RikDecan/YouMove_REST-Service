@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\models\\programmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\programmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\models\\cyclingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\cyclingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymdl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27E67C73-B00D-45C9-A3C9-65C5CDA1BAFE}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,93 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProgramMember.cs",
-              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\ProgramMember.cs",
-              "RelativeDocumentMoniker": "GymDL\\Models\\ProgramMember.cs",
-              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\ProgramMember.cs",
-              "RelativeToolTip": "GymDL\\Models\\ProgramMember.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:38:46.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Program.cs",
               "RelativeDocumentMoniker": "GymDL\\Models\\Program.cs",
               "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Program.cs",
               "RelativeToolTip": "GymDL\\Models\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:38:40.876Z",
+              "WhenOpened": "2024-12-03T10:11:44.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cyclingsession.cs",
-              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Cyclingsession.cs",
-              "RelativeDocumentMoniker": "GymDL\\Models\\Cyclingsession.cs",
-              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Cyclingsession.cs",
-              "RelativeToolTip": "GymDL\\Models\\Cyclingsession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Program.cs",
+              "RelativeDocumentMoniker": "GymDL\\Program.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Program.cs",
+              "RelativeToolTip": "GymDL\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:37:09.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Member.cs",
-              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Member.cs",
-              "RelativeDocumentMoniker": "GymDL\\Models\\Member.cs",
-              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Member.cs",
-              "RelativeToolTip": "GymDL\\Models\\Member.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwAwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:35:15.56Z",
+              "WhenOpened": "2024-12-03T10:11:35.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Reservation.cs",
-              "RelativeDocumentMoniker": "GymDL\\Models\\Reservation.cs",
-              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Reservation.cs",
-              "RelativeToolTip": "GymDL\\Models\\Reservation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:14:01.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "GymDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\GymDbContext.cs",
               "RelativeDocumentMoniker": "GymDL\\GymDbContext.cs",
               "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\GymDbContext.cs",
               "RelativeToolTip": "GymDL\\GymDbContext.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA6wCQAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:42:27.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Equipment.cs",
-              "RelativeDocumentMoniker": "GymDL\\Models\\Equipment.cs",
-              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymDL\\Models\\Equipment.cs",
-              "RelativeToolTip": "GymDL\\Models\\Equipment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:40:54.245Z",
+              "WhenOpened": "2024-12-03T10:11:21.035Z",
               "EditorCaption": ""
             }
           ]

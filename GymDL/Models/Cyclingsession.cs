@@ -13,6 +13,5 @@
         public string Comment { get; set; }
         public int Member_id { get; set; }
 
-       
     }
 }

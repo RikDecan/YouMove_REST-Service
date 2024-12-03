@@ -9,7 +9,5 @@
         public int MaxMembers { get; set; }
 
  
-
-
     }
 }
