@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 using System.Data.SqlClient;
 
 
@@ -28,7 +30,17 @@ app.MapControllers();
 
 
 // Connection string uit appsettings.json ophalen
+
+// ! ik wil het niet uit apsettings halen ik wil her doen met de OnConfigure methode
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+
+
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    optionsBuilder.UseSQLServer(@"Server=LAPTOP-8PQJLNFG\\SQLEXPRESS;Database=[GymTest]; Initial Catalog=Races;Integrated Security=True;TrustServerCertificate=True");
+    //Niet vergeten om de connectiestring aan te passen
+}
 
 try
 {
