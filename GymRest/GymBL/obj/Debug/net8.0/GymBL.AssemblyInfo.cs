@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymBL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33e4438ebc89060fdafed62c8cef47e243953d13")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymBL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymBL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

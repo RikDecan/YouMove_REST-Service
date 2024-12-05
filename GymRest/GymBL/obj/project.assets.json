@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rik\\Desktop\\GymRest\\GymBL\\GymBL.csproj",
+      "projectUniqueName": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\GymBL.csproj",
       "projectName": "GymBL",
-      "projectPath": "C:\\Users\\Rik\\Desktop\\GymRest\\GymBL\\GymBL.csproj",
+      "projectPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\GymBL.csproj",
       "packagesPath": "C:\\Users\\Rik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rik\\Desktop\\GymRest\\GymBL\\obj\\",
+      "outputPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rik\\AppData\\Roaming\\NuGet\\NuGet.Config",

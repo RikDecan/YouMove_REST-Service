@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uv1S8gxq6d0=",
+  "dgSpecHash": "zMrbOLhEh+4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rik\\Desktop\\GymRest\\GymRest\\GymRest.csproj",
+  "projectFilePath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\GymRest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rik\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Rik\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",

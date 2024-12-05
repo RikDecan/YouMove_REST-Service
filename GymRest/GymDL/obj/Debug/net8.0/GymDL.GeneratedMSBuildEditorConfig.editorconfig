@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GymDL
-build_property.ProjectDir = C:\Users\Rik\Desktop\GymRest\GymDL\
+build_property.ProjectDir = C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymDL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

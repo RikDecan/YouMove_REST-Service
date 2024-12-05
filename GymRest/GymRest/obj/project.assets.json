@@ -452,11 +452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rik\\Desktop\\GymRest\\GymRest\\GymRest.csproj",
+      "projectUniqueName": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\GymRest.csproj",
       "projectName": "GymRest",
-      "projectPath": "C:\\Users\\Rik\\Desktop\\GymRest\\GymRest\\GymRest.csproj",
+      "projectPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\GymRest.csproj",
       "packagesPath": "C:\\Users\\Rik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rik\\Desktop\\GymRest\\GymRest\\obj\\",
+      "outputPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rik\\AppData\\Roaming\\NuGet\\NuGet.Config",
