@@ -5,6 +5,8 @@
         public int EquipmentId { get; set; }
         public string DeviceType { get; set; }
 
+
+
  
     }
 }
