@@ -6,6 +6,5 @@
         public string DeviceType { get; set; }
 
  
-
     }
 }

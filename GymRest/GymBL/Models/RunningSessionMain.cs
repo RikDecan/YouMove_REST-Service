@@ -8,7 +8,6 @@
         public int Duration { get; set; }
         public float AvgSpeed { get; set; }
 
-        ICollection<RunningSessionDetail> RunningSessionDetails { get; set; }
 
     }
 }

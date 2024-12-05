@@ -1,6 +1,6 @@
 ﻿namespace GymDL.Models
 {
-    public class Cyclingsession
+    public class CyclingsessionEF
     {
         public int CyclingsessionId { get; set; }
         public DateTime Date { get; set; }

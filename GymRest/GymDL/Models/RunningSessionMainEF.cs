@@ -1,6 +1,6 @@
 ﻿namespace GymDL.Models
 {
-    public class RunningSessionMain
+    public class RunningSessionMainEF
     {
         public int RunningSessionId { get; set; }
         public DateTime Date { get; set; }
@@ -8,7 +8,7 @@
         public int Duration { get; set; }
         public float AvgSpeed { get; set; }
 
-        ICollection<RunningSessionDetail> RunningSessionDetails { get; set; }
+        ICollection<RunningSessionDetailEF> RunningSessionDetails { get; set; }
 
     }
 }

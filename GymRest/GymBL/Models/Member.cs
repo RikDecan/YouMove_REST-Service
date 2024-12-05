@@ -11,10 +11,7 @@ namespace GymDL.Models
         public string Interests { get; set; }
         public string Membertype { get; set; } 
 
-        ICollection<ProgramMember> ProgramMembers { get; set; }
-        ICollection<Cyclingsession> Cyclingsessions { get; set; }
-        ICollection<Reservation> Reservations { get; set; }
-        ICollection<RunningSessionMain> RunningSessionMains { get; set; }            
+       
 
     }
 

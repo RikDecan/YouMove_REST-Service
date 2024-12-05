@@ -7,7 +7,5 @@
         public int EndTime { get; set; }
         public string PartOfDay { get; set; }
 
-
-
     }
 }
