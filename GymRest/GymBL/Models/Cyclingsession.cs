@@ -1,7 +1,34 @@
-﻿namespace GymDL.Models
+﻿namespace GymBL.Models
 {
     public class Cyclingsession
     {
+        public Cyclingsession(DateTime date, int duration, int avg_watt, int max_watt, int avg_cadence, int max_cadence, string trainingtype, string comment, int member_id) //zonder id
+        {
+            Date = date;
+            Duration = duration;
+            Avg_watt = avg_watt;
+            Max_watt = max_watt;
+            Avg_cadence = avg_cadence;
+            Max_cadence = max_cadence;
+            Trainingtype = trainingtype;
+            Comment = comment;
+            Member_id = member_id;
+        }
+
+        public Cyclingsession(int cyclingsessionId, DateTime date, int duration, int avg_watt, int max_watt, int avg_cadence, int max_cadence, string trainingtype, string comment, int member_id) //met id
+        {
+            CyclingsessionId = cyclingsessionId;
+            Date = date;
+            Duration = duration;
+            Avg_watt = avg_watt;
+            Max_watt = max_watt;
+            Avg_cadence = avg_cadence;
+            Max_cadence = max_cadence;
+            Trainingtype = trainingtype;
+            Comment = comment;
+            Member_id = member_id;
+        }
+
         public int CyclingsessionId { get; set; }
         public DateTime Date { get; set; }
         public int Duration { get; set; }

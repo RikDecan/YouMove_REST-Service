@@ -2,6 +2,19 @@
 namespace GymDL.Models
 {
     public class MemberEF{
+        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, string interests, string membertype)
+        {
+            MemberId = memberId;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            Adress = adress;
+            Birthday = birthday;
+            Interests = interests;
+            Membertype = membertype;
+        
+        }
+
         public int MemberId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
