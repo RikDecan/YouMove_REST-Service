@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymRest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd4dc207ea1a155ed240c8dc9d995c947c11335b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8111f9080ae1e81818c690e0cf6188a2f7981b23")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymRest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymRest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

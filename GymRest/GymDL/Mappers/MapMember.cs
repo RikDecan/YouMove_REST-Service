@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GymDL.Mappers
 {
-    internal class MapMember
+    public class MapMember
     {
 
         public static Member MapToDomain(MemberEF db)
@@ -34,5 +34,7 @@ namespace GymDL.Mappers
                 throw new MapException("MapProgram - MapToDB", ex);
             }
         }
+
+        
     }
 }

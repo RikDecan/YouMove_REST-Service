@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{218E5311-11D2-482F-A635-7EACA6A57A0A}|GymBL\\GymBL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymbl\\interfaces\\imemberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218E5311-11D2-482F-A635-7EACA6A57A0A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\interfaces\\imemberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218E5311-11D2-482F-A635-7EACA6A57A0A}|GymBL\\GymBL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymbl\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218E5311-11D2-482F-A635-7EACA6A57A0A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\repositories\\memberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\repositories\\memberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\mappers\\mapcyclingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\mappers\\mapcyclingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\models\\memberef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\memberef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\models\\programef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\programef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\models\\cyclingsessionef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\models\\cyclingsessionef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218E5311-11D2-482F-A635-7EACA6A57A0A}|GymBL\\GymBL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymbl\\models\\cyclingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218E5311-11D2-482F-A635-7EACA6A57A0A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\models\\cyclingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\exceptions\\mapexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\exceptions\\mapexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\mappers\\mapreservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\mappers\\mapreservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymdl\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2742B53-633F-4300-A91C-475167139C60}|GymDL\\GymDL.csproj|solutionrelative:gymdl\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,20 +62,137 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\Services\\MemberService.cs",
+              "RelativeDocumentMoniker": "GymBL\\Services\\MemberService.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\Services\\MemberService.cs",
+              "RelativeToolTip": "GymBL\\Services\\MemberService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:58:47.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IMemberRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\Interfaces\\IMemberRepository.cs",
+              "RelativeDocumentMoniker": "GymBL\\Interfaces\\IMemberRepository.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\Interfaces\\IMemberRepository.cs",
+              "RelativeToolTip": "GymBL\\Interfaces\\IMemberRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:53:08.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MemberRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Repositories\\MemberRepository.cs",
+              "RelativeDocumentMoniker": "GymDL\\Repositories\\MemberRepository.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Repositories\\MemberRepository.cs*",
+              "RelativeToolTip": "GymDL\\Repositories\\MemberRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:51:40.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MapCyclingsession.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Mappers\\MapCyclingsession.cs",
+              "RelativeDocumentMoniker": "GymDL\\Mappers\\MapCyclingsession.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Mappers\\MapCyclingsession.cs",
+              "RelativeToolTip": "GymDL\\Mappers\\MapCyclingsession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:48:39.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemberEF.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Models\\MemberEF.cs",
+              "RelativeDocumentMoniker": "GymDL\\Models\\MemberEF.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Models\\MemberEF.cs",
+              "RelativeToolTip": "GymDL\\Models\\MemberEF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:48:31.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProgramEF.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Models\\ProgramEF.cs",
+              "RelativeDocumentMoniker": "GymDL\\Models\\ProgramEF.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Models\\ProgramEF.cs",
+              "RelativeToolTip": "GymDL\\Models\\ProgramEF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:48:30.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CyclingsessionEF.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Models\\CyclingsessionEF.cs",
+              "RelativeDocumentMoniker": "GymDL\\Models\\CyclingsessionEF.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Models\\CyclingsessionEF.cs",
+              "RelativeToolTip": "GymDL\\Models\\CyclingsessionEF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:48:28.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cyclingsession.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\Models\\Cyclingsession.cs",
+              "RelativeDocumentMoniker": "GymBL\\Models\\Cyclingsession.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\Models\\Cyclingsession.cs",
+              "RelativeToolTip": "GymBL\\Models\\Cyclingsession.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:48:24.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MapException.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Exceptions\\MapException.cs",
+              "RelativeDocumentMoniker": "GymDL\\Exceptions\\MapException.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Exceptions\\MapException.cs",
+              "RelativeToolTip": "GymDL\\Exceptions\\MapException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:48:18.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "GymContext.cs",
               "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\GymContext.cs",
               "RelativeDocumentMoniker": "GymDL\\GymContext.cs",
               "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\GymContext.cs",
               "RelativeToolTip": "GymDL\\GymContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T02:56:35.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "MapReservations.cs",
               "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\Mappers\\MapReservations.cs",
               "RelativeDocumentMoniker": "GymDL\\Mappers\\MapReservations.cs",

@@ -3031,6 +3031,39 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "GymBL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "MySql.Data.EntityFrameworkCore": "8.0.22",
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.Data.SqlClient": "4.9.0"
+        },
+        "compile": {
+          "bin/placeholder/GymBL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GymBL.dll": {}
+        }
+      },
+      "GymDL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GymBL": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "MySql.Data.EntityFrameworkCore": "8.0.22",
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.Data.SqlClient": "4.9.0"
+        },
+        "compile": {
+          "bin/placeholder/GymDL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GymDL.dll": {}
+        }
       }
     }
   },
@@ -9377,10 +9410,22 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "GymBL/1.0.0": {
+      "type": "project",
+      "path": "../GymBL/GymBL.csproj",
+      "msbuildProject": "../GymBL/GymBL.csproj"
+    },
+    "GymDL/1.0.0": {
+      "type": "project",
+      "path": "../GymDL/GymDL.csproj",
+      "msbuildProject": "../GymDL/GymDL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "GymBL >= 1.0.0",
+      "GymDL >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
@@ -9417,7 +9462,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\GymBL.csproj": {
+              "projectPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymBL\\GymBL.csproj"
+            },
+            "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\GymDL.csproj": {
+              "projectPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymDL\\GymDL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
