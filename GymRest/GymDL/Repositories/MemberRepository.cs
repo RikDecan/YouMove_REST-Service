@@ -30,7 +30,7 @@ namespace GymDL.Repositories
                 throw new Exception("Member niet bestaande");
             };
 
-            return (MapMember.MapToDomain(MemberEF));
+            return MapMember.MapToDomain(member);
             
         }
     }

@@ -1,6 +1,7 @@
 using GymBL.Interfaces;
 using GymBL.Models;
 using GymBL.Services;
+using GymDL.Repositories;
 using GymDL;
 
 
@@ -24,17 +25,15 @@ public class Program
         });
 
         builder.Services.AddDbContext<GymContext>();
-        builder.Services.AddScoped<IMemberRepository, MemberRepositoryEF>();
+        builder.Services.AddScoped<IMemberRepository, MemberRepository>();
         builder.Services.AddScoped<MemberService>();
 
 
 
-        builder.Services.AddScoped<IMemberRepository, MemberRepositoryEF>();
-        builder.Services.AddScoped<MemberService>();
-        builder.Services.AddScoped<IEquipmentRepository, EquipmentRepositoryEF>();
-        builder.Services.AddScoped<EquipmentService>();
-        builder.Services.AddScoped<IReservationRepository, ReservationRepositoryEF>();
-        builder.Services.AddScoped<ReservationService>();
+        //builder.Services.AddScoped<IEquipmentRepository, EquipmentRepositoryEF>();
+        //builder.Services.AddScoped<EquipmentService>();
+        //builder.Services.AddScoped<IReservationRepository, ReservationRepositoryEF>();
+        //builder.Services.AddScoped<ReservationService>();
 
         // Voeg hier de JsonOptions toe om circulaire referenties te ondersteunen
         builder.Services.AddControllers();

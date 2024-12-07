@@ -1,0 +1,6 @@
+C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymDL\obj\Debug\net8.0\GymDL.csproj.AssemblyReference.cache
+C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymDL\obj\Debug\net8.0\GymDL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymDL\obj\Debug\net8.0\GymDL.AssemblyInfoInputs.cache
+C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymDL\obj\Debug\net8.0\GymDL.AssemblyInfo.cs
+C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymDL\obj\Debug\net8.0\GymDL.csproj.CoreCompileInputs.cache
+C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymDL\obj\Debug\net8.0\GymDL.sourcelink.json

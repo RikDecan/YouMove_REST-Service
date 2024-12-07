@@ -8,7 +8,7 @@ using GymBL.Models;
 
 namespace GymBL.Services
 {
-    internal class MemberService
+    public class MemberService
     {
         private IMemberRepository repo;
 
