@@ -1,4 +1,6 @@
-﻿namespace GymDL.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GymDL.Models
 {
     public class TimeSlotEF
     {
@@ -9,11 +11,13 @@
             EndTime = endTime;
             PartOfDay = partOfDay;
         }
+        [Key]
 
         public int TimeSlotId { get; set; }
         public int StartTime { get; set; }
         public int EndTime { get; set; }
         public string PartOfDay { get; set; }
+        public ICollection<ReservationEF> Reservations { get; set; }
 
 
     }

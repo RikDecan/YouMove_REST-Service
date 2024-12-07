@@ -1,4 +1,6 @@
-﻿namespace GymDL.Models 
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GymDL.Models 
 { 
     public class EquipmentEF
     {
@@ -7,6 +9,7 @@
             EquipmentId = equipmentId;
             DeviceType = deviceType;
         }
+        [Key]
 
         public int EquipmentId { get; set; }
         public string DeviceType { get; set; }

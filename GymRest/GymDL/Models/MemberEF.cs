@@ -1,4 +1,6 @@
 ﻿
+using System.ComponentModel.DataAnnotations;
+
 namespace GymDL.Models
 {
     public class MemberEF{
@@ -14,6 +16,7 @@ namespace GymDL.Models
             Membertype = membertype;
         
         }
+        [Key]
 
         public int MemberId { get; set; }
         public string FirstName { get; set; }
@@ -25,11 +28,10 @@ namespace GymDL.Models
         public string Membertype { get; set; } 
 
         //ICollection<ProgramMember> ProgramMembers { get; set; }
-        ICollection<CyclingsessionEF> Cyclingsessions { get; set; }
-        ICollection<ReservationEF> Reservations { get; set; }
-        ICollection<RunningSessionMainEF> RunningSessionMains { get; set; }
-        ICollection<ProgramEF> Programs { get; set; }
-
+       public ICollection<CyclingsessionEF> Cyclingsessions { get; set; }
+        public ICollection<ReservationEF> Reservations { get; set; }
+        public ICollection<RunningSessionMainEF> RunningSessionMains { get; set; }
+        public ICollection<ProgramEF> Programs{ get; set; }
     }
 
 }

@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "GymRest/1.0.0": {
         "dependencies": {
+          "GymBL": "1.0.0",
+          "GymDL": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
@@ -1782,6 +1784,35 @@
             "fileVersion": "1.0.24212.1"
           }
         }
+      },
+      "GymBL/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "MySql.Data.EntityFrameworkCore": "8.0.22",
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.Data.SqlClient": "4.9.0"
+        },
+        "runtime": {
+          "GymBL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GymDL/1.0.0": {
+        "dependencies": {
+          "GymBL": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "MySql.Data.EntityFrameworkCore": "8.0.22",
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.Data.SqlClient": "4.9.0"
+        },
+        "runtime": {
+          "GymDL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -2889,6 +2920,16 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "GymBL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GymDL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

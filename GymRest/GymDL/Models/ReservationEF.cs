@@ -1,4 +1,6 @@
-﻿namespace GymDL.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GymDL.Models
 {
     public class ReservationEF
     {
@@ -10,6 +12,7 @@
             Date = date;
             MemberId = memberId;
         }
+        [Key]
 
         public int reservationId { get; set; }
         public int EquipmentId { get; set; }
@@ -17,7 +20,7 @@
         public DateTime Date { get; set; }
         public int MemberId { get; set; }
 
-        ICollection<EquipmentEF> Equipments { get; set; }
-        ICollection<TimeSlotEF> TimeSlots { get; set; }
+        public ICollection<EquipmentEF> Equipments { get; set; }
+        public ICollection<TimeSlotEF> TimeSlots { get; set; }
     }
 }

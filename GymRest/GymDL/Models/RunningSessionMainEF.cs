@@ -1,4 +1,6 @@
-﻿namespace GymDL.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GymDL.Models
 {
     public class RunningSessionMainEF
     {
@@ -10,6 +12,7 @@
             Duration = duration;
             AvgSpeed = avgSpeed;
         }
+        [Key]
 
         public int RunningSessionId { get; set; }
         public DateTime Date { get; set; }
@@ -17,7 +20,7 @@
         public int Duration { get; set; }
         public float AvgSpeed { get; set; }
 
-        ICollection<RunningSessionDetailEF> RunningSessionDetails { get; set; }
+        public ICollection<RunningSessionDetailEF> RunningSessionDetails { get; set; }
 
     }
 }

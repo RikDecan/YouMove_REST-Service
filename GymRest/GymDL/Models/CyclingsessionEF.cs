@@ -1,7 +1,12 @@
-﻿namespace GymDL.Models
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
+
+namespace GymDL.Models
 {
     public class CyclingsessionEF
     {
+
+
         public CyclingsessionEF(int cyclingsessionId, DateTime date, int duration, int avg_watt, int max_watt, int avg_cadence, int max_cadence, string trainingtype, string comment, int member_id)
         {
             CyclingsessionId = cyclingsessionId;
@@ -15,8 +20,8 @@
             Comment = comment;
             Member_id = member_id;
         }
-
-        public int CyclingsessionId { get; set; }
+        [Key] 
+        public int CyclingsessionId { get; set; } 
         public DateTime Date { get; set; }
         public int Duration { get; set; }
         public int Avg_watt { get; set; }
@@ -26,6 +31,9 @@
         public string Trainingtype { get; set; }
         public string Comment { get; set; }
         public int Member_id { get; set; }
+
+        //public ICollection<MemberEF> Members { get; set; } // Correct toegankelijk
+
 
     }
 }

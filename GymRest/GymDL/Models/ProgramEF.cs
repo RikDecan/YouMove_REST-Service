@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace GymDL.Models
 {
@@ -16,13 +17,14 @@ namespace GymDL.Models
             MaxMembers = maxMembers;
         }
 
+        [Key]
+
         public string ProgramCode { get; set; }
         public string Name { get; set; }
         public string Target { get; set; }
         public DateTime StartDate { get; set; }
         public int MaxMembers { get; set; }
 
-        // Navigatie-eigenschap
-        public ICollection<MemberEF> Members { get; set; } // Correct toegankelijk
+        public ICollection<MemberEF> Members { get; set; }
     }
 }

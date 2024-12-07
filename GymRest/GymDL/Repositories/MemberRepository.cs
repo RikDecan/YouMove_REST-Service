@@ -19,8 +19,6 @@ namespace GymDL.Repositories
             ctx = context;
         }
 
-
-    
         public Member GetMemberById(int id)
         {
             var member = ctx.Members.FirstOrDefault(m => m.MemberId == id );

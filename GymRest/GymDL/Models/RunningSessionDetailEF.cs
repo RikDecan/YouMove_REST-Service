@@ -1,4 +1,6 @@
-﻿namespace GymDL.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GymDL.Models
 {
     public class RunningSessionDetailEF
     {
@@ -9,11 +11,13 @@
             IntervalTime = intervalTime;
             IntervalSpeed = intervalSpeed;
         }
+        [Key]
 
         public int RunningSessionId { get; set; }
         public int SeqNr { get; set; }
         public int IntervalTime { get; set; }
         public float IntervalSpeed { get; set; }
+        //public ICollection<RunningSessionDetailEF> RunningSessionDetails { get; set; }
 
     }
 }
