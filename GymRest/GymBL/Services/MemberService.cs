@@ -17,7 +17,7 @@ namespace GymBL.Services
             this.repo = repo;
         }
 
-        public Member GetMember(int id)
+        public Member GetMemberById(int id)
         {
             try
             {
@@ -29,7 +29,17 @@ namespace GymBL.Services
             }
         }
 
-
+        public Member UpdateMemberById(int id, Member member)
+        {
+            try
+            {
+                return repo.UpdateMemberById(id, member);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Geef Member", ex);
+            }
+        }
 
 
     }

@@ -1,14 +1,14 @@
 ﻿namespace GymBL.Models
 {
-    public class Program
+    public class ProgramBL
     {
-        public Program(string programCode, string name)
+        public ProgramBL(string programCode, string name)
         {
             ProgramCode = programCode;
             Name = name;
         }
 
-        public Program(string name, string target, DateTime startDate, int maxMembers)//zonder id
+        public ProgramBL(string name, string target, DateTime startDate, int maxMembers)//zonder id
         {
             Name = name;
             Target = target;
@@ -16,7 +16,7 @@
             MaxMembers = maxMembers;
         }
 
-        public Program(string programCode, string name, string target, DateTime startDate, int maxMembers)//met id
+        public ProgramBL(string programCode, string name, string target, DateTime startDate, int maxMembers)//met id
         {
             ProgramCode = programCode;
             Name = name;

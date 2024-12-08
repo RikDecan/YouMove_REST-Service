@@ -9,9 +9,8 @@ namespace GymBL.Interfaces
 {
     public interface IMemberRepository
     {
-        public Member GetMemberById (int id) ;  
-        
+        public Member GetMemberById (int id) ;
 
-
+        public Member UpdateMemberById(int id, Member member);
     }
 }

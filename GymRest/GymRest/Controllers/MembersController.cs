@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Security.Policy;
 using GymBL.Models;
 using GymBL.Services;
@@ -23,15 +22,8 @@ namespace GymRest.Controllers
         }
 
 
-        //[HttpGet]
-        //[HttpHead]
-        //public IEnumerable<Country> Get()
-        //{
-        //    return repo.GetAll();
-        //}
 
         [HttpGet("{id}")]
-        [HttpHead("{id}")]
         public ActionResult<Member> GetMemberById(int id)
         {
             try
@@ -43,6 +35,24 @@ namespace GymRest.Controllers
                 return NotFound(ex.Message);
             }
         }
+
+        [Route("Update/{id}")]
+        [HttpPut]
+        public Member Update(int id, [FromBody] MemberDTO dataIn )
+        {
+            Member member = new Member
+                (id,
+                dataIn.FirstName,                
+                dataIn.LastName,
+      dataIn.Email,
+      dataIn.Adress,
+      dataIn.Birthday,
+      dataIn.Interests,
+      dataIn.Membertype
+      );
+            return repo.UpdateMemberById(id, member);
+        }
+
     }
 }
 

@@ -4,7 +4,11 @@ using System.ComponentModel.DataAnnotations;
 namespace GymDL.Models
 {
     public class MemberEF{
-        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, string interests, string membertype)
+        public MemberEF()
+        {
+        }
+
+        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> list, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
         {
             MemberId = memberId;
             FirstName = firstName;
@@ -12,10 +16,9 @@ namespace GymDL.Models
             Email = email;
             Adress = adress;
             Birthday = birthday;
-            Interests = interests;
             Membertype = membertype;
-        
         }
+
         [Key]
 
         public int MemberId { get; set; }
@@ -24,11 +27,11 @@ namespace GymDL.Models
         public string Email { get; set; }
         public string Adress { get; set; }
         public DateTime Birthday { get; set; }
-        public string Interests { get; set; }
+        public List<string>  Interests { get; set; }
         public string Membertype { get; set; } 
 
         //ICollection<ProgramMember> ProgramMembers { get; set; }
-       public ICollection<CyclingsessionEF> Cyclingsessions { get; set; }
+        public ICollection<CyclingsessionEF> CyclingSessions { get; set; }
         public ICollection<ReservationEF> Reservations { get; set; }
         public ICollection<RunningSessionMainEF> RunningSessionMains { get; set; }
         public ICollection<ProgramEF> Programs{ get; set; }
