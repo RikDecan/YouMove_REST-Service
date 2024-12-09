@@ -80,7 +80,7 @@ namespace GymDL.Repositories
                 {
                     throw new MemberNotFoundException(id);
                 }
-
+                member.MemberId = id;
                 _context.Entry(memberDB).CurrentValues.SetValues(MapMember.MapToDL(member));
                 _context.SaveChanges();
 

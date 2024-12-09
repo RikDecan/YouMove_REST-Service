@@ -145,7 +145,6 @@ C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.AssemblyInfoInputs.cache
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.AssemblyInfo.cs
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.csproj.CoreCompileInputs.cache
-C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.sourcelink.json
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\staticwebassets.build.json

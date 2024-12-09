@@ -36,12 +36,14 @@ namespace GymRest.Controllers
                 throw new Exception(ex.Message);
             }
         }
+
+
+
+
         [HttpPost("NieuweMember")]
 
         public Member CreateMember([FromBody] MemberDTO memberDTO)
         {
-
-
 
             try
             {
@@ -65,48 +67,32 @@ namespace GymRest.Controllers
             }
         }
 
+        [Route("UpdateMember/{id}")]
+        [HttpPut]
 
+        public Member UpdateMemberById(int id, [FromBody] MemberDTO memberDTO)
+        {
+            try
+            {
+                Member member = new Member(
 
-        //public ActionResult<Member> GetMemberById(int id)
-        //{
-        //    try
-        //    {
-        //        var member = repo.GetMemberById(id);
+                memberDTO.FirstName,
+                memberDTO.LastName,
+                memberDTO.Email,
+                memberDTO.Adress,
+                memberDTO.Birthday,
+                memberDTO.Interests,
+                memberDTO.Membertype
 
-        //        if (member == null)
-        //        {
-        //            return NotFound($"No member found with id {id}");
-        //        }
+                    );
+                return repo.UpdateMemberById(id, member);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
-        //        // Log the value for debugging
-        //        Console.WriteLine($"Returning member: {System.Text.Json.JsonSerializer.Serialize(member)}");
-
-        //        return Ok(member);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Exception: {ex.Message}");
-        //        return StatusCode(500, "Internal server error");
-        //    }
-        //}
-
-
-        //  [Route("Update/{id}")]
-        //  [HttpPut]
-        //  public Member Update(int id, [FromBody] MemberDTO dataIn )
-        //  {
-        //      Member member = new Member
-        //          (id,
-        //          dataIn.FirstName,                
-        //          dataIn.LastName,
-        //          dataIn.Email,
-        //          dataIn.Adress,
-        //          dataIn.Birthday,
-        //          dataIn.Interests,
-        //          dataIn.Membertype
-        //);
-        //      return repo.UpdateMemberById(id, member);
-        //  }
 
     }
 }

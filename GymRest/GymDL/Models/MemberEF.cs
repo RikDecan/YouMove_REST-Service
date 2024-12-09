@@ -8,7 +8,17 @@ namespace GymDL.Models
         {
         }
 
-        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
+        public MemberEF(string firstName, string lastName, string email, string adress, DateTime birthday, List<string> list, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            Adress = adress;
+            Birthday = birthday;
+            Membertype = membertype;
+        }
+
+        public MemberEF(int? memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
         {
             MemberId = memberId;
             FirstName = firstName;
@@ -20,7 +30,7 @@ namespace GymDL.Models
             Membertype = membertype;
         }
 
-        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, string membertype, ICollection<CyclingsessionEF> cyclingSessions, ICollection<ReservationEF> reservations, ICollection<RunningSessionMainEF> runningSessionMains, ICollection<ProgramEF> programs)
+        public MemberEF(int? memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, string membertype, ICollection<CyclingsessionEF> cyclingSessions, ICollection<ReservationEF> reservations, ICollection<RunningSessionMainEF> runningSessionMains, ICollection<ProgramEF> programs)
         {
             MemberId = memberId;
             FirstName = firstName;
@@ -38,7 +48,7 @@ namespace GymDL.Models
 
         [Key]
 
-        public int MemberId { get; set; }
+        public int? MemberId  { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
