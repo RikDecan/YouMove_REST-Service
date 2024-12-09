@@ -2,22 +2,15 @@
 namespace GymBL.Models
 {
     public class Member{
+
+
         public Member()
         {
+            
         }
 
-        public Member(int id, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, string membertype)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Email = email;
-            Adress = adress;
-            Birthday = birthday;
-            Interests = interests;
-            Membertype = membertype;
-        }
 
-        public Member(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> list, List<Cyclingsession> cyclingsessions, List<RunningSessionMain> runningSessionMains, List<Reservation> reservations, List<ProgramBL> programBLs, string membertype)
+        public Member(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, List<Cyclingsession> cyclingsessions, List<RunningSessionMain> runningSessionMains, List<Reservation> reservations, List<ProgramBL> programBLs, string membertype)
         {
             MemberId = memberId;
             FirstName = firstName;
@@ -25,6 +18,7 @@ namespace GymBL.Models
             Email = email;
             Adress = adress;
             Birthday = birthday;
+            Interests = interests;
             Cyclingsessions = cyclingsessions;
             RunningSessionMains = runningSessionMains;
             Reservations = reservations;
@@ -40,11 +34,12 @@ namespace GymBL.Models
         public List<string> Interests { get; set; }
         public string Membertype { get; set; } 
 
+
        
-        public ICollection<Cyclingsession> Cyclingsessions { get; set; }
-        public ICollection<Reservation> Reservations { get; set; }
-        public ICollection<RunningSessionMain> RunningSessionMains { get; set; }
-        public ICollection<ProgramBL> Programs{ get; set; }
+        public List<Cyclingsession> Cyclingsessions { get; set; }
+        public List<Reservation> Reservations { get; set; }
+        public List<RunningSessionMain> RunningSessionMains { get; set; }
+        public List<ProgramBL> Programs{ get; set; }
     }
 
 }

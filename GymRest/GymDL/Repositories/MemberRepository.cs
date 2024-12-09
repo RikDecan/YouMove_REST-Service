@@ -8,62 +8,78 @@ using GymBL.Models;
 using GymDL.Mappers;
 using GymDL.Models;
 using Microsoft.EntityFrameworkCore;
+using GymDL.Exceptions;
 
 namespace GymDL.Repositories
 {
     public class MemberRepository : IMemberRepository
     {
-        private readonly GymContext ctx;
+        private readonly GymContext _context;
 
         public MemberRepository(GymContext context)
         {
-            ctx = context;
+            _context = context;
         }
 
         public Member GetMemberById(int id)
         {
             try
             {
-                var member = ctx.Members
-                    .Include(m => m.Programs)
-                    .Include(m => m.Reservations)
-                    .Include(m => m.CyclingSessions)
-                    .Include(m => m.RunningSessionMains)
-                    .FirstOrDefault(m => m.MemberId == id);
+                var member = _context.Members.FirstOrDefault(m => m.MemberId == id);
+                    //.Include(m => m.Programs)
+                    //.Include(m => m.Reservations)
+                    //.Include(m => m.CyclingSessions)
+                    //.Include(m => m.RunningSessionMains)
 
-                return member != null ? MapMember.MapToDomain(member) : throw new Exception("Member is null");
+                if (member == null)
+                {
+                    throw new Exception("Member not found");
+                }
+
+                return MapMember.MapToDomain(member);
             }
             catch (Exception ex)
             {
-                throw new Exception("GetMember", ex);
+                // Log ex.Message
+                throw;
             }
 
+            // Replace this logic with your database fetching logic
+            //    if (id == 1) // Simulate database logic
+            //    {
+            //        return new Member(1, "John", "Doe", "john.doe@mail.com", "123 Main Street", DateTime.Parse("1990-01-01"), new List<string> { "Fitness", "Running" }, "Gold");
+            //    }
+
+            //    return null; // Simulate no member found
         }
 
         public Member UpdateMemberById(int id, Member member)
         {
+            if (member == null)
+            {
+                throw new ArgumentNullException(nameof(member), "Member cannot be null");
+            }
+
             try
             {
-                var memberDB = ctx.Members.Find(id);
+                var memberDB = _context.Members.Find(id);
 
-                if (memberDB == null) { throw new Exception("UpdateMember - Member not found"); }
+                if (memberDB == null)
+                {
+                    throw new MemberNotFoundException(id);
+                }
 
-                ctx.Entry(memberDB).CurrentValues.SetValues(MapMember.MapToDL(member));
-                ctx.SaveChanges();
+                _context.Entry(memberDB).CurrentValues.SetValues(MapMember.MapToDL(member));
+                _context.SaveChanges();
+
                 return MapMember.MapToDomain(memberDB);
             }
             catch (Exception ex)
             {
-
-                throw new Exception("UpdateMember - Member not found", ex);
+                // Log ex.Message
+                throw new Exception("Member not found");
             }
-            //Member member1 = new Member();
-            //return member1;
         }
-
-
-
-
-
     }
+
 }

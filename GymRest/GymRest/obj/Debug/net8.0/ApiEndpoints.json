@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "GymRest.Controllers.DatabaseController",
+    "Method": "CheckDatabaseConnection",
+    "RelativePath": "api/Database/check-connection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GymRest.Controllers.MemberController",
     "Method": "GetMemberById",
     "RelativePath": "api/Member/{id}",
@@ -10,37 +20,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "GymBL.Models.Member",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "GymRest.Controllers.MemberController",
-    "Method": "Update",
-    "RelativePath": "api/Member/Update/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dataIn",
-        "Type": "GymRest.DTO.MemberDTO",
         "IsRequired": true
       }
     ],

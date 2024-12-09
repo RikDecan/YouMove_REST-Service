@@ -28,7 +28,5 @@ namespace GymDL
         {
             optionsBuilder.UseSqlServer(@"Data Source=LAPTOP-8PQJLNFG\SQLEXPRESS;Initial Catalog=GymTest;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
-
-
     }
 }

@@ -12,6 +12,5 @@
         public List<string> Interests { get; set; }
         public string Membertype { get; set; }
 
-
     }
 }

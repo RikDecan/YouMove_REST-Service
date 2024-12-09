@@ -17,7 +17,6 @@ namespace GymDL.Mappers
         {
             try
             {
-
                 return new Member(
                     db.MemberId,
                     db.FirstName,
