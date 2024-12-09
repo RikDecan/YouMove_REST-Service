@@ -25,9 +25,13 @@ namespace GymDL.Mappers
                     db.Adress,
                     db.Birthday,
                     db.Interests ?? new List<string>(),
-                    db.CyclingSessions ?.Select(MapCyclingsession.MapToDomain).ToList() ?? new List<Cyclingsession>(),
+
+                    db.CyclingSessions?.Select(MapCyclingsession.MapToDomain).ToList() ?? new List<Cyclingsession>(),
+
                     db.RunningSessionMains?.Select(MapRunningSessionMain.MapToDomain).ToList() ?? new List<RunningSessionMain>(),
+
                     db.Reservations?.Select(MapReservations.MapToDomain).ToList() ?? new List<Reservation>(),
+
                     db.Programs?.Select(MapProgram.MapToDomain).ToList() ?? new List<ProgramBL>(),
                     db.Membertype);
             }
@@ -59,7 +63,7 @@ namespace GymDL.Mappers
                 throw new MapException("MapProgram - MapToDomain", ex);
             }
         }
-        
-        
     }
+
+
 }

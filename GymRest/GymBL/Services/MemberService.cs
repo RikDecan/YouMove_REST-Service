@@ -29,6 +29,19 @@ namespace GymBL.Services
             }
         }
 
+
+        public Member CreateNewMember(Member member)
+        {
+            try
+            {
+                return repo.CreateMember(member);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Geef info voor het aanmaken", ex);
+            }
+        }
+
         public Member UpdateMemberById(int id, Member member)
         {
             try

@@ -8,6 +8,7 @@ using GymDL.Mappers;
 using System.Diagnostics.Metrics;
 using GymBL.Interfaces;
 using System.Linq.Expressions;
+using System.Reflection;
 
 namespace GymRest.Controllers
 {
@@ -35,6 +36,35 @@ namespace GymRest.Controllers
                 throw new Exception(ex.Message);
             }
         }
+        [HttpPost("NieuweMember")]
+
+        public Member CreateMember([FromBody] MemberDTO memberDTO)
+        {
+
+
+
+            try
+            {
+
+                Member member = new Member(
+
+                memberDTO.FirstName,
+                memberDTO.LastName,
+                memberDTO.Email,
+                memberDTO.Adress,
+                memberDTO.Birthday,
+                memberDTO.Interests,
+                memberDTO.Membertype
+
+                    );
+                return repo.CreateMember(member);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
 
 
         //public ActionResult<Member> GetMemberById(int id)
@@ -61,25 +91,22 @@ namespace GymRest.Controllers
         //}
 
 
-
-
-
-      //  [Route("Update/{id}")]
-      //  [HttpPut]
-      //  public Member Update(int id, [FromBody] MemberDTO dataIn )
-      //  {
-      //      Member member = new Member
-      //          (id,
-      //          dataIn.FirstName,                
-      //          dataIn.LastName,
-      //          dataIn.Email,
-      //          dataIn.Adress,
-      //          dataIn.Birthday,
-      //          dataIn.Interests,
-      //          dataIn.Membertype
-      //);
-      //      return repo.UpdateMemberById(id, member);
-      //  }
+        //  [Route("Update/{id}")]
+        //  [HttpPut]
+        //  public Member Update(int id, [FromBody] MemberDTO dataIn )
+        //  {
+        //      Member member = new Member
+        //          (id,
+        //          dataIn.FirstName,                
+        //          dataIn.LastName,
+        //          dataIn.Email,
+        //          dataIn.Adress,
+        //          dataIn.Birthday,
+        //          dataIn.Interests,
+        //          dataIn.Membertype
+        //);
+        //      return repo.UpdateMemberById(id, member);
+        //  }
 
     }
 }

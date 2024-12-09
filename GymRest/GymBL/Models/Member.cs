@@ -9,6 +9,16 @@ namespace GymBL.Models
             
         }
 
+        public Member(string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, string membertype)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            Adress = adress;
+            Birthday = birthday;
+            Interests = interests;
+            Membertype = membertype;
+        }
 
         public Member(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, List<Cyclingsession> cyclingsessions, List<RunningSessionMain> runningSessionMains, List<Reservation> reservations, List<ProgramBL> programBLs, string membertype)
         {
@@ -36,7 +46,7 @@ namespace GymBL.Models
 
 
        
-        public List<Cyclingsession> Cyclingsessions { get; set; }
+        public List<Cyclingsession> Cyclingsessions { get; set; } = new List<Cyclingsession>();
         public List<Reservation> Reservations { get; set; }
         public List<RunningSessionMain> RunningSessionMains { get; set; }
         public List<ProgramBL> Programs{ get; set; }

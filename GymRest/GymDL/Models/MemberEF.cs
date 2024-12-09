@@ -8,7 +8,7 @@ namespace GymDL.Models
         {
         }
 
-        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> list, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
+        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
         {
             MemberId = memberId;
             FirstName = firstName;
@@ -16,7 +16,24 @@ namespace GymDL.Models
             Email = email;
             Adress = adress;
             Birthday = birthday;
+            Interests = interests;
             Membertype = membertype;
+        }
+
+        public MemberEF(int memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, string membertype, ICollection<CyclingsessionEF> cyclingSessions, ICollection<ReservationEF> reservations, ICollection<RunningSessionMainEF> runningSessionMains, ICollection<ProgramEF> programs)
+        {
+            MemberId = memberId;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            Adress = adress;
+            Birthday = birthday;
+            Interests = interests;
+            Membertype = membertype;
+            CyclingSessions = cyclingSessions;
+            Reservations = reservations;
+            RunningSessionMains = runningSessionMains;
+            Programs = programs;
         }
 
         [Key]
@@ -27,7 +44,7 @@ namespace GymDL.Models
         public string Email { get; set; }
         public string Adress { get; set; }
         public DateTime Birthday { get; set; }
-        public List<string>  Interests { get; set; }
+        public List<string> Interests { get; set; }
         public string Membertype { get; set; } 
 
         //ICollection<ProgramMember> ProgramMembers { get; set; }

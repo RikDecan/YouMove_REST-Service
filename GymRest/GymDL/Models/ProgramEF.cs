@@ -25,6 +25,7 @@ namespace GymDL.Models
         public DateTime StartDate { get; set; }
         public int MaxMembers { get; set; }
 
+
         public ICollection<MemberEF> Members { get; set; }
     }
 }

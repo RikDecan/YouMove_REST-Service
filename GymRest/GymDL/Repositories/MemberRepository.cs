@@ -9,6 +9,7 @@ using GymDL.Mappers;
 using GymDL.Models;
 using Microsoft.EntityFrameworkCore;
 using GymDL.Exceptions;
+using Microsoft.IdentityModel.Tokens;
 
 namespace GymDL.Repositories
 {
@@ -51,6 +52,17 @@ namespace GymDL.Repositories
             //    }
 
             //    return null; // Simulate no member found
+        }
+
+        public Member CreateMember(Member member)
+        {
+            var memberEF = MapMember.MapToDL(member);          
+
+            _context.Members.Add(memberEF);
+
+            _context.SaveChanges();
+
+            return member;
         }
 
         public Member UpdateMemberById(int id, Member member)

@@ -36,6 +36,32 @@
     ]
   },
   {
+    "ContainingType": "GymRest.Controllers.MemberController",
+    "Method": "CreateMember",
+    "RelativePath": "api/Member/NieuweMember",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "memberDTO",
+        "Type": "GymRest.DTO.MemberDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymBL.Models.Member",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GymRest.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
