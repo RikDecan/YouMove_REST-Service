@@ -16,18 +16,18 @@ namespace GymDL.Mappers
         {
             try
             {
-                return new Equipment(db.EquipmentId, db.DeviceType);
+                return new Equipment(db.EquipmentId, db.DeviceType, db.InService);
             }
             catch (Exception ex)
             {
                 throw new MapException("MapProgram - MapToDomain", ex);
             }
         }
-        public static EquipmentEF MapToDB(Equipment g)
+        public static EquipmentEF MapToDL(Equipment g)
         {
             try
             {
-                return new EquipmentEF(g.EquipmentId, g.DeviceType);
+                return new EquipmentEF(g.EquipmentId, g.DeviceType, g.InService);
             }
             catch (Exception ex)
             {

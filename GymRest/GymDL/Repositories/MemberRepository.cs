@@ -27,10 +27,6 @@ namespace GymDL.Repositories
             try
             {
                 var member = _context.Members.FirstOrDefault(m => m.MemberId == id);
-                    //.Include(m => m.Programs)
-                    //.Include(m => m.Reservations)
-                    //.Include(m => m.CyclingSessions)
-                    //.Include(m => m.RunningSessionMains)
 
                 if (member == null)
                 {
@@ -41,17 +37,9 @@ namespace GymDL.Repositories
             }
             catch (Exception ex)
             {
-                // Log ex.Message
                 throw;
             }
 
-            // Replace this logic with your database fetching logic
-            //    if (id == 1) // Simulate database logic
-            //    {
-            //        return new Member(1, "John", "Doe", "john.doe@mail.com", "123 Main Street", DateTime.Parse("1990-01-01"), new List<string> { "Fitness", "Running" }, "Gold");
-            //    }
-
-            //    return null; // Simulate no member found
         }
 
         public Member CreateMember(Member member)
@@ -88,7 +76,6 @@ namespace GymDL.Repositories
             }
             catch (Exception ex)
             {
-                // Log ex.Message
                 throw new Exception("Member not found");
             }
         }

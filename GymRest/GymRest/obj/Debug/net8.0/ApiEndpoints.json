@@ -10,6 +10,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GymRest.Controllers.EquipmentController",
+    "Method": "CreateEquipment",
+    "RelativePath": "api/Equipment/NieuweMember",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipmentDTO",
+        "Type": "GymRest.DTO.EquipmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymBL.Models.Equipment",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GymRest.Controllers.MemberController",
     "Method": "GetMemberById",
     "RelativePath": "api/Member/{id}",

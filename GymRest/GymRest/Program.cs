@@ -4,8 +4,6 @@ using GymBL.Services;
 using GymDL.Repositories;
 using GymDL;
 
-
-
 public class Program
 {
     public static void Main(string[] args)
@@ -28,12 +26,10 @@ public class Program
         builder.Services.AddScoped<IMemberRepository, MemberRepository>();
         builder.Services.AddScoped<MemberService>();
 
+        builder.Services.AddScoped<IEquipmentRepository, EquipmentRepository>();
+        builder.Services.AddScoped<EquipmentService>();
 
 
-
-
-        //builder.Services.AddScoped<IEquipmentRepository, EquipmentRepositoryEF>();
-        //builder.Services.AddScoped<EquipmentService>();
         //builder.Services.AddScoped<IReservationRepository, ReservationRepositoryEF>();
         //builder.Services.AddScoped<ReservationService>();
 

@@ -8,7 +8,7 @@ namespace GymDL.Models
         {
         }
 
-        public MemberEF(string firstName, string lastName, string email, string adress, DateTime birthday, List<string> list, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
+        public MemberEF(string firstName, string lastName, string email, string adress, DateTime birthday, List<string> list, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype) //zonder MemberId
         {
             FirstName = firstName;
             LastName = lastName;
@@ -18,7 +18,7 @@ namespace GymDL.Models
             Membertype = membertype;
         }
 
-        public MemberEF(int? memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype)
+        public MemberEF(int? memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, List<CyclingsessionEF> cyclingsessionEFs, List<RunningSessionMainEF> runningSessionMainEFs, List<ProgramEF> programEFs, string membertype) //Met MemberId zonder ICOllections
         {
             MemberId = memberId;
             FirstName = firstName;
@@ -30,7 +30,7 @@ namespace GymDL.Models
             Membertype = membertype;
         }
 
-        public MemberEF(int? memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, string membertype, ICollection<CyclingsessionEF> cyclingSessions, ICollection<ReservationEF> reservations, ICollection<RunningSessionMainEF> runningSessionMains, ICollection<ProgramEF> programs)
+        public MemberEF(int? memberId, string firstName, string lastName, string email, string adress, DateTime birthday, List<string> interests, string membertype, ICollection<CyclingsessionEF> cyclingSessions, ICollection<ReservationEF> reservations, ICollection<RunningSessionMainEF> runningSessionMains, ICollection<ProgramEF> programs) //zonder MemberId met ICOllections
         {
             MemberId = memberId;
             FirstName = firstName;
