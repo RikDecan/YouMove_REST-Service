@@ -11,8 +11,34 @@
   },
   {
     "ContainingType": "GymRest.Controllers.EquipmentController",
+    "Method": "GetEquipmentById",
+    "RelativePath": "api/Equipment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymBL.Models.Equipment",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymRest.Controllers.EquipmentController",
     "Method": "CreateEquipment",
-    "RelativePath": "api/Equipment/Nieuw Toestel",
+    "RelativePath": "api/Equipment/NewEquipment",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -38,7 +64,7 @@
   {
     "ContainingType": "GymRest.Controllers.EquipmentController",
     "Method": "ToggleEquipmentInService",
-    "RelativePath": "api/Equipment/ToggleEquipmentInService/{id}",
+    "RelativePath": "api/Equipment/ToggleEquipmentService/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

@@ -19,6 +19,25 @@ namespace GymDL.Repositories
             _context = context;
         }
 
+        public Equipment GetEquipmentById(int id) 
+        {
+            try
+            {
+                var equipment = _context.Equipment.FirstOrDefault(e => e.EquipmentId == id);
+
+                if (equipment == null)
+                {
+                    throw new Exception("Equipment not found");
+                }
+
+                return MapEquipment.MapToDomain(equipment);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
 
         public Equipment CreateEquipment(Equipment equipment)
         {

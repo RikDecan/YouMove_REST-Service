@@ -18,6 +18,20 @@ namespace GymBL.Services
             this.repo = repo;
         }
 
+
+        public Equipment GetEquipmentById(int id)
+        { 
+            try
+            {
+                return repo.GetEquipmentById(id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Niet gevonden", ex);
+            }
+        }
+
+
         public Equipment CreateEquipment(Equipment equipment)
         {
             try

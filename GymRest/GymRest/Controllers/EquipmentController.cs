@@ -18,7 +18,23 @@ namespace GymRest.Controllers
             this.repo = repo;
         }
 
-        [HttpPost("Nieuw Toestel")]
+
+
+        [HttpGet("{id}")]
+        public Equipment GetEquipmentById(int id)
+        {
+            try
+            {
+                return repo.GetEquipmentById(id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        [HttpPost("NewEquipment")]
 
         public Equipment CreateEquipment([FromBody] EquipmentDTO equipmentDTO)
         {
@@ -33,6 +49,20 @@ namespace GymRest.Controllers
 
                     );
                 return repo.CreateEquipment(equipment);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        [Route("ToggleEquipmentService/{id}")]
+        [HttpPut]
+        public Equipment ToggleEquipmentInService(int id)
+        {
+            try
+            {
+                return repo.ToggleEquipmentInService(id);
             }
             catch (Exception ex)
             {
@@ -59,24 +89,8 @@ namespace GymRest.Controllers
         //    {
         //        throw new Exception(ex.Message);
         //    }
-
-
         //}
 
-
-        [Route("ToggleEquipmentInService/{id}")]
-        [HttpPut]
-        public Equipment ToggleEquipmentInService(int id)
-        {
-            try
-            {
-                return repo.ToggleEquipmentInService(id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
 
 
     }
