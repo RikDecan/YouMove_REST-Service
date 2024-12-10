@@ -22,7 +22,7 @@ namespace GymDL.Mappers
                 throw new MapException("MapProgram - MapToDomain", ex);
             }
         }
-        public static TimeSlotEF MapToDB(TimeSlot g)
+        public static TimeSlotEF MapToDL(TimeSlot g)
         {
             try
             {

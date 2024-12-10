@@ -22,7 +22,7 @@ namespace GymDL.Mappers
                 throw new MapException("MapProgram - MapToDomain", ex);
             }
         }
-        public static ReservationEF MapToDB(Reservation g)
+        public static ReservationEF MapToDL(Reservation g)
         {
             try
             {

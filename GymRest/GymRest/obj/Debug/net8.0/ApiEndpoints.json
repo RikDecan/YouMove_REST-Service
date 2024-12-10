@@ -12,7 +12,7 @@
   {
     "ContainingType": "GymRest.Controllers.EquipmentController",
     "Method": "CreateEquipment",
-    "RelativePath": "api/Equipment/NieuweMember",
+    "RelativePath": "api/Equipment/Nieuw Toestel",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -20,6 +20,32 @@
       {
         "Name": "equipmentDTO",
         "Type": "GymRest.DTO.EquipmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymBL.Models.Equipment",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymRest.Controllers.EquipmentController",
+    "Method": "ToggleEquipmentInService",
+    "RelativePath": "api/Equipment/ToggleEquipmentInService/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

@@ -30,6 +30,32 @@ namespace GymBL.Services
             }
         }
 
+        public Equipment UpdateEquipmentById(int id, Equipment equipment)
+        {
+            try
+            {
+                return repo.UpdateEquipmentById(id, equipment);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Geef Toestel", ex);
+            }
+
+        }
+
+        public Equipment ToggleEquipmentInService(int id) {
+
+            try
+            {
+                return repo.ToggleEquipmentInService(id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Geef Toestel", ex);
+            }
+
+        }
+
     }
 }
 

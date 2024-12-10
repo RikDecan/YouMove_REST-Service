@@ -2,6 +2,11 @@
 { 
     public class Equipment
     {
+        public Equipment(bool inService)
+        {
+            InService = inService;
+        }
+
         public Equipment(string deviceType, bool inService)
         {
             DeviceType = deviceType;

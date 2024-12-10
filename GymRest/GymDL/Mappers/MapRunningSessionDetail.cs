@@ -22,7 +22,7 @@ namespace GymDL.Mappers
                 throw new MapException("MapProgram - MapToDomain", ex);
             }
         }
-        public static RunningSessionDetailEF MapToDB(RunningSessionDetail g)
+        public static RunningSessionDetailEF MapToDL(RunningSessionDetail g)
         {
             try
             {

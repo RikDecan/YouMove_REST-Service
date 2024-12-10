@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GymBL.Interfaces;
 using GymBL.Models;
+using GymDL.Exceptions;
 using GymDL.Mappers;
 
 namespace GymDL.Repositories
@@ -29,5 +30,58 @@ namespace GymDL.Repositories
 
             return equipment;
         }
+
+        public Equipment UpdateEquipmentById(int id, Equipment equipment)
+        {
+            if (equipment == null)
+            {
+                throw new ArgumentNullException(nameof(equipment), "Equipment cannot be null");
+            }
+
+            try
+            {
+                var equipmentDB = _context.Equipment.Find(id);
+
+                if (equipmentDB == null)
+                {
+                    throw new MemberNotFoundException(id);
+                }
+                equipment.EquipmentId = id;
+                _context.Entry(equipmentDB).CurrentValues.SetValues(MapEquipment.MapToDL(equipment));
+                _context.SaveChanges();
+
+                return MapEquipment.MapToDomain(equipmentDB);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Member not found");
+            }
+
+        }
+
+        public Equipment ToggleEquipmentInService(int id)
+        {
+            try
+            {
+                var equipmentDB = _context.Equipment.Find(id);
+
+                if (equipmentDB == null)
+                {
+                    throw new MemberNotFoundException(id);
+                }
+
+                equipmentDB.InService = !equipmentDB.InService;
+
+                _context.SaveChanges();
+
+                return MapEquipment.MapToDomain(equipmentDB);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error toggling InService status", ex);
+            }
+        }
+
+
     }
 }
