@@ -26,7 +26,7 @@ namespace GymDL.Repositories
         {
             try
             {
-                var member = _context.Members.FirstOrDefault(m => m.MemberId == id);
+                var member = _context.Members.Include(m => m.Reservations).Include(m => m.CyclingSessions).Include(m => m.RunningSessions).Include(m => m.Programs).FirstOrDefault(m => m.MemberId == id);
 
                 if (member == null)
                 {
@@ -41,7 +41,25 @@ namespace GymDL.Repositories
             }
 
         }
+        public bool RemoveMember(int id)
+        {
+            var memberEF = _context.Members.FirstOrDefault( m => m.MemberId == id);
 
+            if(memberEF != null)
+            {
+                _context.Members.Remove(memberEF);
+                _context.SaveChanges();
+                return true;
+            }
+            else 
+            { 
+                throw new Exception("This member doesn't exist");
+            }
+        }
+        public List<Member> GetMembers()
+        {
+            return _context.Members.Include(member => member.Reservations).Include(member => member.RunningSessions).Include(member => member.CyclingSessions).Include(member => member.Programs).Select(member => MapMember.MapToDomain(member)).ToList();
+        }
         public Member CreateMember(Member member)
         {
             var memberEF = MapMember.MapToDL(member);          

@@ -23,8 +23,8 @@ namespace GymRest.Controllers
             this.repo = repo;
         }
 
-
-        [HttpGet("{id}")]
+        [Route("GetMemberById/{id}")]
+        [HttpGet]
         public Member GetMemberById(int id)
         {
             try
@@ -37,34 +37,36 @@ namespace GymRest.Controllers
             }
         }
 
+        [Route("GetMembers")]
+        [HttpGet]
+        public List<Member> GetMembers()
+        {
+            return repo.GetMembers();
+        }
 
+        [Route("RemoveMember/{id}")]
+        [HttpDelete]
+        public bool RemoveMember(int id)
+        {
+            return repo.RemoveMember(id);
+        }
 
-
-        [HttpPost("NieuweMember")]
+        [Route("NieuweMember")]
+        [HttpPost]
 
         public Member CreateMember([FromBody] MemberDTO memberDTO)
         {
-
-            try
-            {
-
-                Member member = new Member(
-
+                Member member = new Member
+                (
                 memberDTO.FirstName,
                 memberDTO.LastName,
                 memberDTO.Email,
-                memberDTO.Adress,
+                memberDTO.Address,
                 memberDTO.Birthday,
                 memberDTO.Interests,
                 memberDTO.Membertype
-
-                    );
+                );
                 return repo.CreateMember(member);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
         }
 
         [Route("UpdateMember/{id}")]
@@ -79,7 +81,7 @@ namespace GymRest.Controllers
                 memberDTO.FirstName,
                 memberDTO.LastName,
                 memberDTO.Email,
-                memberDTO.Adress,
+                memberDTO.Address,
                 memberDTO.Birthday,
                 memberDTO.Interests,
                 memberDTO.Membertype

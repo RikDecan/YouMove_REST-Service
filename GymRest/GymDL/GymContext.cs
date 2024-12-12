@@ -12,7 +12,7 @@ namespace GymDL
 {
     public class GymContext : DbContext
     {
-        public DbSet<CyclingsessionEF> Cyclingsessions { get; set; }
+        public DbSet<CyclingSessionEF> Cyclingsessions { get; set; }
         public DbSet<EquipmentEF> Equipment { get; set; }
         public DbSet<MemberEF> Members { get; set; }
         public DbSet<ProgramEF> Programs { get; set; }

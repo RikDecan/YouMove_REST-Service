@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymDL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+364f8084acc17d81f62bc13fbf5c6fdf4cd54132")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8c5de758c0c86d7ba5fe13affa5c0c48996d88a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymDL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymDL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

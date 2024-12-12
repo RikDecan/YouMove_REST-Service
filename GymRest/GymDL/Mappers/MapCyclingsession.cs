@@ -13,22 +13,22 @@ namespace GymDL.Mappers
 {
     internal class MapCyclingsession
     {
-        public static Cyclingsession MapToDomain(CyclingsessionEF db)
+        public static Cyclingsession MapToDomain(CyclingSessionEF db)
         {
             try
             {
-                return new Cyclingsession(db.CyclingsessionId, db.Date, db.Duration, db.Avg_watt, db.Max_watt, db.Avg_cadence, db.Max_cadence, db.Trainingtype, db.Comment, db.Member_id);
+                return new Cyclingsession(db.CyclingSessionId, db.Date, db.Duration, db.Avg_watt, db.Max_watt, db.Avg_Cadence, db.Max_Cadence, db.TrainingType, db.Comment, db.MemberId);
             }
             catch (Exception ex)
             {
                 throw new MapException("MapProgram - MapToDomain", ex);
             }
         }
-        public static CyclingsessionEF MapToDB(Cyclingsession g)
+        public static CyclingSessionEF MapToDB(Cyclingsession g)
         {
             try
             {
-                return new CyclingsessionEF(g.CyclingsessionId, g.Date, g.Duration, g.Avg_watt, g.Max_watt, g.Avg_cadence, g.Max_cadence, g.Trainingtype, g.Comment, g.Member_id);
+                return new CyclingSessionEF(g.CyclingsessionId, g.Date, g.Duration, g.Avg_watt, g.Max_watt, g.Avg_cadence, g.Max_cadence, g.Trainingtype, g.Comment, g.MemberId);
             }
             catch (Exception ex)
             {

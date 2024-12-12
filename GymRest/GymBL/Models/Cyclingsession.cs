@@ -2,7 +2,7 @@
 {
     public class Cyclingsession
     {
-        public Cyclingsession(DateTime date, int duration, int avg_watt, int max_watt, int avg_cadence, int max_cadence, string trainingtype, string comment, int member_id) //zonder id
+        public Cyclingsession(DateTime date, double duration, double avg_watt, double max_watt, double avg_cadence, double max_cadence, string trainingtype, string comment, int member_id) //zonder id
         {
             Date = date;
             Duration = duration;
@@ -12,10 +12,10 @@
             Max_cadence = max_cadence;
             Trainingtype = trainingtype;
             Comment = comment;
-            Member_id = member_id;
+            MemberId = member_id;
         }
 
-        public Cyclingsession(int cyclingsessionId, DateTime date, int duration, int avg_watt, int max_watt, int avg_cadence, int max_cadence, string trainingtype, string comment, int member_id) //met id
+        public Cyclingsession(int cyclingsessionId, DateTime date, double duration, double avg_watt, double max_watt, double avg_cadence, double max_cadence, string trainingtype, string comment, int memberId) //met id
         {
             CyclingsessionId = cyclingsessionId;
             Date = date;
@@ -26,19 +26,19 @@
             Max_cadence = max_cadence;
             Trainingtype = trainingtype;
             Comment = comment;
-            Member_id = member_id;
+            MemberId = memberId;
         }
 
         public int CyclingsessionId { get; set; }
         public DateTime Date { get; set; }
-        public int Duration { get; set; }
-        public int Avg_watt { get; set; }
-        public int Max_watt { get; set; }
-        public int Avg_cadence  { get; set; }
-        public int Max_cadence { get; set; }
+        public double Duration { get; set; }
+        public double Avg_watt { get; set; }
+        public double Max_watt { get; set; }
+        public double Avg_cadence  { get; set; }
+        public double Max_cadence { get; set; }
         public string Trainingtype { get; set; }
         public string Comment { get; set; }
-        public int Member_id { get; set; }
+        public int MemberId { get; set; }
 
     }
 }

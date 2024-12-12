@@ -11,13 +11,14 @@ namespace GymDL.Models
             IntervalTime = intervalTime;
             IntervalSpeed = intervalSpeed;
         }
-        [Key]
 
+        [Key]
         public int RunningSessionId { get; set; }
         public int SeqNr { get; set; }
         public int IntervalTime { get; set; }
         public float IntervalSpeed { get; set; }
-        //public ICollection<RunningSessionDetailEF> RunningSessionDetails { get; set; }
 
+        // Navigation Properties
+        public RunningSessionMainEF RunningSessionMain { get; set; }
     }
 }

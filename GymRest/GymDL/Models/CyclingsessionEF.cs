@@ -3,37 +3,40 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GymDL.Models
 {
-    public class CyclingsessionEF
+    public class CyclingSessionEF
     {
 
-
-        public CyclingsessionEF(int cyclingsessionId, DateTime date, int duration, int avg_watt, int max_watt, int avg_cadence, int max_cadence, string trainingtype, string comment, int member_id)
+        public CyclingSessionEF()
         {
-            CyclingsessionId = cyclingsessionId;
+            
+        }
+        public CyclingSessionEF(int cyclingSessionId, DateTime date, double duration, double avgWatt, double maxWatt, double avgCadence, double maxCadence, string trainingType, string comment, int member_id)
+        {
+            CyclingSessionId = cyclingSessionId;
             Date = date;
             Duration = duration;
-            Avg_watt = avg_watt;
-            Max_watt = max_watt;
-            Avg_cadence = avg_cadence;
-            Max_cadence = max_cadence;
-            Trainingtype = trainingtype;
+            Avg_watt = avgWatt;
+            Max_watt = maxWatt;
+            Avg_Cadence = avgCadence;
+            Max_Cadence = maxCadence;
+            TrainingType = trainingType;
             Comment = comment;
-            Member_id = member_id;
+            MemberId = member_id;
         }
-        [Key] 
-        public int CyclingsessionId { get; set; } 
+
+
+        [Key]
+        public int CyclingSessionId { get; set; }
         public DateTime Date { get; set; }
-        public int Duration { get; set; }
-        public int Avg_watt { get; set; }
-        public int Max_watt { get; set; }
-        public int Avg_cadence  { get; set; }
-        public int Max_cadence { get; set; }
-        public string Trainingtype { get; set; }
-        public string Comment { get; set; }
-        public int Member_id { get; set; }
-
-        //public ICollection<MemberEF> Members { get; set; } // Correct toegankelijk
-
+        public double Duration { get; set; }
+        public double Avg_watt { get; set; }
+        public double Max_watt { get; set; }
+        public double Avg_Cadence { get; set; }
+        public double Max_Cadence { get; set; }
+        public string TrainingType { get; set; }
+        public string? Comment { get; set; }
+        public int MemberId { get; set; }
+        public MemberEF Member { get; set; }
 
     }
 }

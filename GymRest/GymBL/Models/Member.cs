@@ -14,7 +14,7 @@ namespace GymBL.Models
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            Adress = adress;
+            Address = adress;
             Birthday = birthday;
             Interests = interests;
             Membertype = membertype;
@@ -25,7 +25,7 @@ namespace GymBL.Models
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            Adress = adress;
+            Address = adress;
             Birthday = birthday;
             Interests = interests;
             Membertype = membertype;
@@ -37,7 +37,7 @@ namespace GymBL.Models
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            Adress = adress;
+            Address = adress;
             Birthday = birthday;
             Interests = interests;
             Cyclingsessions = cyclingsessions;
@@ -50,7 +50,7 @@ namespace GymBL.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public string Adress { get; set; }
+        public string Address { get; set; }
         public DateTime Birthday { get; set; }
         public List<string> Interests { get; set; }
         public string Membertype { get; set; } 

@@ -15,7 +15,7 @@ namespace GymDL.Mappers
         {
             try
             {
-                return new Reservation(db.reservationId, db.EquipmentId, db.TimeSlotId, db.Date, db.MemberId);
+                return new Reservation(db.ReservationId, db.EquipmentId, db.TimeSlotId, db.Date, db.MemberId);
             }
             catch (Exception ex)
             {

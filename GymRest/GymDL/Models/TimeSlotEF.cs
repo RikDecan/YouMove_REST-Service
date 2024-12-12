@@ -4,6 +4,10 @@ namespace GymDL.Models
 {
     public class TimeSlotEF
     {
+        public TimeSlotEF()
+        {
+        }
+
         public TimeSlotEF(int timeSlotId, int startTime, int endTime, string partOfDay)
         {
             TimeSlotId = timeSlotId;
@@ -11,14 +15,14 @@ namespace GymDL.Models
             EndTime = endTime;
             PartOfDay = partOfDay;
         }
-        [Key]
 
+        [Key]
         public int TimeSlotId { get; set; }
         public int StartTime { get; set; }
         public int EndTime { get; set; }
         public string PartOfDay { get; set; }
+
+        // Navigation Properties
         public ICollection<ReservationEF> Reservations { get; set; }
-
-
     }
 }

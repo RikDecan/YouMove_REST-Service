@@ -161,3 +161,4 @@ C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.pdb
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.genruntimeconfig.cache
 C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\ref\GymRest.dll
+C:\Users\Rik\Documents\GitHub\YouMove_REST-Service\GymRest\GymRest\obj\Debug\net8.0\GymRest.MvcApplicationPartsAssemblyInfo.cs

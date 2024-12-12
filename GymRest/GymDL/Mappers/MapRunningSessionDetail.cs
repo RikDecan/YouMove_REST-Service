@@ -11,7 +11,7 @@ namespace GymDL.Mappers
 {
     internal class MapRunningSessionDetail
     {
-             public static RunningSessionDetail MapToDomain(RunningSessionDetailEF db)
+        public static RunningSessionDetail MapToDomain(RunningSessionDetailEF db)
         {
             try
             {

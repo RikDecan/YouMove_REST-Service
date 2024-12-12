@@ -1786,12 +1786,6 @@
         }
       },
       "GymBL/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
-          "MySql.Data.EntityFrameworkCore": "8.0.22",
-          "System.Configuration.ConfigurationManager": "8.0.0",
-          "System.Data.SqlClient": "4.9.0"
-        },
         "runtime": {
           "GymBL.dll": {
             "assemblyVersion": "1.0.0",
@@ -1802,10 +1796,8 @@
       "GymDL/1.0.0": {
         "dependencies": {
           "GymBL": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
-          "MySql.Data.EntityFrameworkCore": "8.0.22",
-          "System.Configuration.ConfigurationManager": "8.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
         },
         "runtime": {
           "GymDL.dll": {

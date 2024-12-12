@@ -4,23 +4,37 @@ namespace GymDL.Models
 {
     public class ReservationEF
     {
+        public ReservationEF() { }
+
         public ReservationEF(int reservationId, int equipmentId, int timeSlotId, DateTime date, int memberId)
         {
-            this.reservationId = reservationId;
+            ReservationId = reservationId;
             EquipmentId = equipmentId;
             TimeSlotId = timeSlotId;
             Date = date;
             MemberId = memberId;
         }
-        [Key]
 
-        public int reservationId { get; set; }
+        public ReservationEF(int reservationId, int equipmentId, int timeSlotId, DateTime date, int memberId, TimeSlotEF timeslot, EquipmentEF equipment)
+        {
+            ReservationId = reservationId;
+            EquipmentId = equipmentId;
+            TimeSlotId = timeSlotId;
+            Date = date;
+            MemberId = memberId;
+            TimeSlot = timeslot;
+            Equipment = equipment;
+        }
+        [Key]
+        public int ReservationId { get; set; }
         public int EquipmentId { get; set; }
         public int TimeSlotId { get; set; }
         public DateTime Date { get; set; }
         public int MemberId { get; set; }
 
-        public ICollection<EquipmentEF> Equipments { get; set; }
-        public ICollection<TimeSlotEF> TimeSlots { get; set; }
+        // Navigation Properties
+        public EquipmentEF Equipment { get; set; }
+        public TimeSlotEF TimeSlot { get; set; }
+        public MemberEF Member { get; set; }
     }
 }

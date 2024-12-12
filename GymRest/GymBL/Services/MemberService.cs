@@ -28,7 +28,29 @@ namespace GymBL.Services
                 throw new Exception("Geef Member", ex);
             }
         }
+        public List<Member> GetMembers()
+        {
+            try
+            {
+                return repo.GetMembers();
+            }
+            catch (Exception ex)
+            {
 
+                throw new Exception("MemberService-GetMembers",ex);
+            }
+        }
+        public bool RemoveMember(int id)
+        {
+            try
+            {
+                return repo.RemoveMember(id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("MemberSerive-RemoveMember",ex);
+            }
+        }
 
         public Member CreateNewMember(Member member)
         {
