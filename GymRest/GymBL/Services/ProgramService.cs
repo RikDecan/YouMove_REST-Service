@@ -1,4 +1,4 @@
-﻿using GymBL.Interfaces;
+﻿    using GymBL.Interfaces;
 using GymBL.Models;
 using System;
 using System.Collections.Generic;
@@ -33,7 +33,7 @@ namespace GymBL.Services
         {
             try
             {
-                return repo.UpdateProgram(in,program);
+                return repo.UpdateProgram(id,program);
             }
             catch (Exception ex)
             {

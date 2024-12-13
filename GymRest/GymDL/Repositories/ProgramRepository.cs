@@ -1,5 +1,6 @@
 ﻿using GymBL.Interfaces;
 using GymBL.Models;
+using GymDL.Mappers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,11 @@ namespace GymDL.Repositories
         {
             try
             {
+                var programEF = MapProgram.MapToDB(program);
+                _context.Programs.Add(programEF);
+                _context.SaveChanges();
 
+                return program;                
             }
             catch (Exception ex)
             {
@@ -31,8 +36,28 @@ namespace GymDL.Repositories
         }
         public ProgramBL UpdateProgram(int id, ProgramBL program)
         {
+            if (program == null)
+            {
+                throw new ArgumentNullException(nameof(program), "Program can't be null");
+            }
+
             try
             {
+                var ProgramDB = _context.Programs.Find(id);
+
+                if (ProgramDB == null)
+                {
+                    throw new Exception("No Program Found");
+                }
+                else
+                {
+                    program.ProgramCode = id;
+                    _context.Entry(ProgramDB).CurrentValues.SetValues(MapProgram.MapToDB(program));
+                    _context.SaveChanges();
+
+                    return MapProgram.MapToDomain(ProgramDB);
+                }
+
 
             }
             catch (Exception ex)

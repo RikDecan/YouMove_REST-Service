@@ -56,8 +56,7 @@ namespace GymRest.Controllers
 
         public Member CreateMember([FromBody] MemberDTO memberDTO)
         {
-                Member member = new Member
-                (
+                Member member = new Member(
                 memberDTO.FirstName,
                 memberDTO.LastName,
                 memberDTO.Email,

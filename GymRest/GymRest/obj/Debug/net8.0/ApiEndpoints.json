@@ -215,5 +215,62 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "GymRest.Controllers.ProgramController",
+    "Method": "AddProgram",
+    "RelativePath": "api/Program/NewProgram",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programDTO",
+        "Type": "GymRest.DTO.ProgramDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymBL.Models.ProgramBL",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymRest.Controllers.ProgramController",
+    "Method": "UpdateProgram",
+    "RelativePath": "api/Program/UpdateProgram/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "programDTO",
+        "Type": "GymRest.DTO.ProgramDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GymBL.Models.ProgramBL",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

@@ -2,7 +2,7 @@
 {
     public class ProgramBL
     {
-        public ProgramBL(string programCode, string name)
+        public ProgramBL(int programCode, string name)
         {
             ProgramCode = programCode;
             Name = name;
@@ -16,7 +16,7 @@
             MaxMembers = maxMembers;
         }
 
-        public ProgramBL(string programCode, string name, string target, DateTime startDate, int maxMembers)//met id
+        public ProgramBL(int programCode, string name, string target, DateTime startDate, int maxMembers)//met id
         {
             ProgramCode = programCode;
             Name = name;
@@ -25,7 +25,7 @@
             MaxMembers = maxMembers;
         }
 
-        public string ProgramCode { get; set; }
+        public int ProgramCode { get; set; }
         public string Name { get; set; }
         public string Target { get; set; }
         public DateTime StartDate { get; set; }

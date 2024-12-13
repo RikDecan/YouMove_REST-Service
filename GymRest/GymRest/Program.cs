@@ -29,6 +29,8 @@ public class Program
         builder.Services.AddScoped<IEquipmentRepository, EquipmentRepository>();
         builder.Services.AddScoped<EquipmentService>();
 
+        builder.Services.AddScoped<IProgramRepository, ProgramRepository>();
+        builder.Services.AddScoped<ProgramRepository>();
 
         //builder.Services.AddScoped<IReservationRepository, ReservationRepositoryEF>();
         //builder.Services.AddScoped<ReservationService>();
