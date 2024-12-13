@@ -49,14 +49,13 @@ namespace GymDL.Repositories
                 {
                     throw new Exception("No Program Found");
                 }
-                else
-                {
+              
                     program.ProgramCode = id;
                     _context.Entry(ProgramDB).CurrentValues.SetValues(MapProgram.MapToDB(program));
                     _context.SaveChanges();
 
                     return MapProgram.MapToDomain(ProgramDB);
-                }
+                
 
 
             }

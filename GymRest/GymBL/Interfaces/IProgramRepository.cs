@@ -9,7 +9,7 @@ namespace GymBL.Interfaces
 {
     public interface IProgramRepository
     {
-        public ProgramBL UpdateProgram(int id, ProgramBL program);
         public ProgramBL AddProgram(ProgramBL program);
+        public ProgramBL UpdateProgram(int id, ProgramBL program);
     }
 }

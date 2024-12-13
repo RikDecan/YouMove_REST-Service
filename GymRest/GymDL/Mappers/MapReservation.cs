@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GymDL.Mappers
 {
-    internal class MapReservations
+    internal class MapReservation
     {
         public static Reservation MapToDomain(ReservationEF db)
         {

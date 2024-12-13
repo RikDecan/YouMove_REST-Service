@@ -30,7 +30,7 @@ namespace GymDL.Mappers
 
                     db.RunningSessions?.Select(MapRunningSessionMain.MapToDomain).ToList() ?? new List<RunningSessionMain>(),
 
-                    db.Reservations?.Select(MapReservations.MapToDomain).ToList() ?? new List<Reservation>(),
+                    db.Reservations?.Select(MapReservation.MapToDomain).ToList() ?? new List<Reservation>(),
 
                     db.Programs?.Select(MapProgram.MapToDomain).ToList() ?? new List<ProgramBL>(),
                     db.MemberType);
