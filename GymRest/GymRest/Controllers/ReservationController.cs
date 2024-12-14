@@ -1,7 +1,6 @@
 ﻿using GymBL.Interfaces;
-using GymRest.DTO;
 using GymBL.Models;
-using GymDL;
+using GymRest.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

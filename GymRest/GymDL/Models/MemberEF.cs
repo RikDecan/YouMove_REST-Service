@@ -51,7 +51,7 @@ namespace GymDL.Models
         public string Address { get; set; }
         [Required]
         public DateTime Birthday { get; set; }
-        public List<string>? Interests { get; set; }
+        public List<string> ? Interests { get; set; }
         [Required]
         public string MemberType { get; set; }
         public ICollection<ProgramEF> Programs { get; set; }
