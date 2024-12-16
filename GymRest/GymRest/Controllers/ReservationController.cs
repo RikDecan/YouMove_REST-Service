@@ -56,5 +56,12 @@ namespace GymRest.Controllers
             
         }
 
+        [Route("RemoveReservation/{id}")]
+        [HttpDelete]
+        public bool RemoveReservation(int id)
+        {
+            return repo.RemoveReservation(id);
+        }
+
     }
 }

@@ -17,6 +17,6 @@ namespace GymBL.Interfaces
         TimeSlot GetTimeSlotById(int timeSlotId);
         List<Reservation> GetReservationsByMemberAndDate(int memberId, DateTime date);
         List<Reservation> GetReservationsByEquipmentAndDate(int equipmentId, DateTime date, int timeSlotId);
-
+        public bool RemoveReservation(int id);
     }
 }

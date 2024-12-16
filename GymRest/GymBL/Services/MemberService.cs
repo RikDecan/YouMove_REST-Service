@@ -52,7 +52,7 @@ namespace GymBL.Services
             }
         }
 
-        public Member CreateNewMember(Member member)
+        public Member CreateMember(Member member)
         {
             try
             {

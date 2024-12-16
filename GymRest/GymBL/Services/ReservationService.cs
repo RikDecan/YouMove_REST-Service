@@ -46,6 +46,20 @@ namespace GymBL.Services
             }
         }
 
+        public bool RemoveReservation(int id)
+        {
+            try
+            {
+                return repo.RemoveReservation(id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ReservationService-RemoveReservation", ex);
+            }
+        }
+
+
+
         public void ReservationChecker(Reservation reservation, bool isExistingReservation, bool IsUpdating)
         {
             if (reservation == null)

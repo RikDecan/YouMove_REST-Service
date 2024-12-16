@@ -321,6 +321,32 @@
   },
   {
     "ContainingType": "GymRest.Controllers.ReservationController",
+    "Method": "RemoveReservation",
+    "RelativePath": "api/Reservation/RemoveReservation/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GymRest.Controllers.ReservationController",
     "Method": "UpdateReservation",
     "RelativePath": "api/Reservation/UpdateReservation/{id}",
     "HttpMethod": "PUT",

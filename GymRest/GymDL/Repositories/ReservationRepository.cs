@@ -36,6 +36,25 @@ namespace GymDL.Repositories
                 throw new Exception("ReservationRepository-AddReservation", ex);
             }
         }
+
+
+        public bool RemoveReservation(int id)
+        {
+
+            var reservationEF = _context.Reservations.FirstOrDefault(m => m.EquipmentId == id);
+
+            if (reservationEF != null)
+            {
+                _context.Reservations.Remove(reservationEF);
+                _context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                throw new Exception("This Reservation doesn't excist");
+            }
+        }
+
         public List<Reservation> GetReservationsByMemberAndDate( int memberId, DateTime date)
         {
             var reservations = _context.Reservations.Include(r => r.TimeSlot).Include(r => r.Equipment).Where(r => r.Date == date && r.MemberId == memberId).Select(r => MapReservation.MapToDomain(r)).ToList();
