@@ -1,5 +1,6 @@
 ﻿using GymBL.Interfaces;
 using GymBL.Models;
+using GymBL.Services;
 using GymRest.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,9 +12,9 @@ namespace GymRest.Controllers
     public class EquipmentController : ControllerBase
     {
 
-        private IEquipmentRepository repo;
+        private EquipmentService repo;
 
-        public EquipmentController(IEquipmentRepository repo)
+        public EquipmentController(EquipmentService repo)
         {
             this.repo = repo;
         }

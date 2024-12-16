@@ -4,6 +4,7 @@ using GymBL.Models;
 using GymDL;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using GymBL.Services;
 
 namespace GymRest.Controllers
 {
@@ -11,9 +12,9 @@ namespace GymRest.Controllers
     [ApiController]
     public class ProgramController : ControllerBase
     {
-        private IProgramRepository repo;
+        private ProgramService repo;
 
-        public ProgramController(IProgramRepository repo) 
+        public ProgramController(ProgramService repo) 
         {
             this.repo = repo;
         }
