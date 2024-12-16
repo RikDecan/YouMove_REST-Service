@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 using GymDL.Models;
 using Microsoft.EntityFrameworkCore;
 
-
-
 namespace GymDL
 {
     public class GymContext : DbContext
