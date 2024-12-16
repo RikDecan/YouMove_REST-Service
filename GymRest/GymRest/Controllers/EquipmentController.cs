@@ -33,6 +33,14 @@ namespace GymRest.Controllers
             }
         }
 
+        [Route("GetEquipments")]
+        [HttpGet]
+
+        public List<Equipment> GetEquipments()
+        {
+            return repo.GetEquipments();
+        }
+
 
         [HttpPost("NewEquipment")]
 

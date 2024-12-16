@@ -16,9 +16,9 @@ namespace GymRest.Controllers
     [ApiController]
     public class MemberController : ControllerBase
     {
-        private IMemberRepository repo;
+        private MemberService repo;
 
-        public MemberController(IMemberRepository repo)
+        public MemberController(MemberService repo)
         {
             this.repo = repo;
         }

@@ -1,5 +1,6 @@
 ﻿using GymBL.Interfaces;
 using GymBL.Models;
+using GymBL.Services;
 using GymRest.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,9 +11,11 @@ namespace GymRest.Controllers
     [ApiController]
     public class ReservationController : ControllerBase
     {
-        private IReservationRepository repo;
+        private ReservationService repo;
 
-        public ReservationController(IReservationRepository repo)
+        
+
+        public ReservationController(ReservationService repo)
         {
             this.repo = repo;
         }
@@ -23,33 +26,23 @@ namespace GymRest.Controllers
 
 
         public Reservation AddReservation([FromBody] ReservationDTO reservationDTO)
-        {
-            try
-            {
+        {            
                 Reservation reservation = new Reservation
                 (
                     reservationDTO.EquipmentId,
                     reservationDTO.TimeSlotId,
-                    reservationDTO.Date,
+                    reservationDTO.Date,+
                     reservationDTO.MemberId
                 );
 
-                return repo.AddReservation(reservation);
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+                return repo.AddReservation(reservation);            
         }
 
         [Route("UpdateReservation/{id}")]
         [HttpPut]
 
         public Reservation UpdateReservation(int id, [FromBody] ReservationDTO reservationDTO)
-        {
-            try
-            {
+        {           
                 Reservation reservation = new Reservation
                 (
                     reservationDTO.EquipmentId,
@@ -60,11 +53,7 @@ namespace GymRest.Controllers
 
                 return repo.UpdateReservation(id, reservation);
 
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            
         }
 
     }

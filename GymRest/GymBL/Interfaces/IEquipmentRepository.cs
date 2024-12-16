@@ -10,7 +10,7 @@ namespace GymBL.Interfaces
     public interface IEquipmentRepository
     {
         public Equipment GetEquipmentById(int id);
-
+        public List<Equipment> GetEquipments();
         public Equipment CreateEquipment(Equipment equipment);
 
         public Equipment ToggleEquipmentInService(int id);

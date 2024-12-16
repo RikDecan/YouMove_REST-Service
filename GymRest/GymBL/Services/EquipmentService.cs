@@ -44,6 +44,19 @@ namespace GymBL.Services
             }
         }
 
+        public List<Equipment> GetEquipments()
+        {
+            try
+            {
+                return repo.GetEquipments();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("MemberService-GetMembers", ex);
+            }
+        }
+
         public Equipment UpdateEquipmentById(int id, Equipment equipment)
         {
             try

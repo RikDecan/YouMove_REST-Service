@@ -15,6 +15,11 @@ namespace GymDL.Models
             InService = inService;
         }
 
+        public EquipmentEF(int equipmentId, string deviceType, bool inService, ICollection<ReservationEF> reservations) : this(equipmentId, deviceType, inService)
+        {
+            Reservations = reservations;
+        }
+
         [Key]
         public int EquipmentId { get; set; }
         public string DeviceType { get; set; }

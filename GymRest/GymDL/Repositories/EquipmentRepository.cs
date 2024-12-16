@@ -7,6 +7,7 @@ using GymBL.Interfaces;
 using GymBL.Models;
 using GymDL.Exceptions;
 using GymDL.Mappers;
+using Microsoft.EntityFrameworkCore;
 
 namespace GymDL.Repositories
 {
@@ -36,6 +37,11 @@ namespace GymDL.Repositories
             {
                 throw;
             }
+        }
+        
+        public List<Equipment> GetEquipments()
+        {
+            return _context.Equipment.Include(equipment => equipment.Reservations).Select(equipment => MapEquipment.MapToDomain(equipment)).ToList();
         }
 
 
