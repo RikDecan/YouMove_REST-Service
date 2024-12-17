@@ -42,37 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Program.cs",
-              "RelativeDocumentMoniker": "GymRest\\Program.cs",
-              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Program.cs",
-              "RelativeToolTip": "GymRest\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAawEIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T19:49:30.164Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TrainingTypeSessionsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
-              "RelativeDocumentMoniker": "GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
-              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
-              "RelativeToolTip": "GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T20:54:20.794Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -147,9 +121,35 @@
               "RelativeDocumentMoniker": "GymRest\\Controllers\\MembersController.cs",
               "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Controllers\\MembersController.cs",
               "RelativeToolTip": "GymRest\\Controllers\\MembersController.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAAAPIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAqwNsAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T16:54:20.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainingTypeSessionsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
+              "RelativeDocumentMoniker": "GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
+              "RelativeToolTip": "GymRest\\DTO\\TrainingTypeSessionsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T20:54:20.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Program.cs",
+              "RelativeDocumentMoniker": "GymRest\\Program.cs",
+              "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Program.cs",
+              "RelativeToolTip": "GymRest\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAawEIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T19:49:30.164Z",
               "EditorCaption": ""
             }
           ]
