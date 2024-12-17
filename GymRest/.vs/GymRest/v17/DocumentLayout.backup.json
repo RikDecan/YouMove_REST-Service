@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35F039F4-5B72-46E9-B327-8C37FA1B7AE4}|GymRest\\GymRest.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymrest\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35F039F4-5B72-46E9-B327-8C37FA1B7AE4}|GymRest\\GymRest.csproj|solutionrelative:gymrest\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35F039F4-5B72-46E9-B327-8C37FA1B7AE4}|GymRest\\GymRest.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F039F4-5B72-46E9-B327-8C37FA1B7AE4}|GymRest\\GymRest.csproj|solutionrelative:gymrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F039F4-5B72-46E9-B327-8C37FA1B7AE4}|GymRest\\GymRest.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymrest\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F039F4-5B72-46E9-B327-8C37FA1B7AE4}|GymRest\\GymRest.csproj|solutionrelative:gymrest\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35F039F4-5B72-46E9-B327-8C37FA1B7AE4}|GymRest\\GymRest.csproj|c:\\users\\rik\\documents\\github\\youmove_rest-service\\gymrest\\gymrest\\dto\\trainingtypesessionsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MembersController.cs",
               "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Controllers\\MembersController.cs",
               "RelativeDocumentMoniker": "GymRest\\Controllers\\MembersController.cs",
@@ -135,15 +135,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Program.cs",
               "RelativeDocumentMoniker": "GymRest\\Program.cs",
               "ToolTip": "C:\\Users\\Rik\\Documents\\GitHub\\YouMove_REST-Service\\GymRest\\GymRest\\Program.cs",
               "RelativeToolTip": "GymRest\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAawEIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T19:49:30.164Z"
+              "WhenOpened": "2024-12-17T19:49:30.164Z",
+              "EditorCaption": ""
             }
           ]
         }
