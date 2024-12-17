@@ -149,10 +149,8 @@ namespace GymRest.Controllers
         {
             Member member = repo.GetMemberById(id);
 
-            // Define all possible training types
             var trainingTypes = new[] { "fun", "endurance", "interval", "recovery" };
 
-            // Create a list of all training types with zero sessions
             var trainingTypeSessionsList = trainingTypes
                 .Select(type => new TrainingTypeSessionsDTO
                 {
@@ -161,13 +159,11 @@ namespace GymRest.Controllers
                 })
                 .ToList();
 
-            // Group cycling sessions by training type for the specified year
             var cyclingSessionsByTrainingType = member.Cyclingsessions
                 .Where(cs => cs.Date.Year == year)
                 .GroupBy(cs => cs.Trainingtype)
                 .ToList();
 
-            // Update sessions counts for each training type
             int trainingTypeIndex = 0;
             while (trainingTypeIndex < cyclingSessionsByTrainingType.Count)
             {
@@ -243,8 +239,5 @@ namespace GymRest.Controllers
                 throw new Exception(ex.Message);
             }
         }
-
-
     }
 }
-
