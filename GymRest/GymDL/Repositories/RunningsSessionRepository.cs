@@ -15,7 +15,7 @@ namespace GymDL.Repositories
 
         private readonly GymContext _context;
 
-        private RunningsSessionRepository(GymContext context)
+        public RunningsSessionRepository(GymContext context)
         {
             _context = context;
         }

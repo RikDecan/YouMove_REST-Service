@@ -27,7 +27,7 @@ namespace GymRest.Controllers
         [Route("GetDetailsById/{id}")]
         [HttpGet]
 
-        public RunningSessionMain GetDetailsById(int id)
+        public IActionResult GetDetailsById(int id)
         {
             var existingRunningSession = repo.GetDetailsById(id);
             if (existingRunningSession == null)
@@ -47,8 +47,7 @@ namespace GymRest.Controllers
                     SeqNr = d.SeqNr,
                     IntervalTime = d.IntervalTime,
                     IntervalSpeed = d.IntervalSpeed
-                }
-                ).ToList()
+                }).ToList()
             };
 
             return Ok(runningSession);

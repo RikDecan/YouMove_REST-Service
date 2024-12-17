@@ -4,6 +4,8 @@ namespace GymDL.Models
 {
     public class RunningSessionDetailEF
     {
+        public RunningSessionDetailEF() { }
+
         public RunningSessionDetailEF(int runningSessionId, int seqNr, int intervalTime, float intervalSpeed)
         {
             RunningSessionId = runningSessionId;
