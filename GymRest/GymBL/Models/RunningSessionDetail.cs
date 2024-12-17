@@ -2,6 +2,10 @@
 {
     public class RunningSessionDetail
     {
+
+        public RunningSessionDetail()
+        { 
+        }
         public RunningSessionDetail(int seqNr, int intervalTime, float intervalSpeed)// zonder id
         {
             SeqNr = seqNr;

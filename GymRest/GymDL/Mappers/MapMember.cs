@@ -33,7 +33,8 @@ namespace GymDL.Mappers
                     db.Reservations?.Select(MapReservation.MapToDomain).ToList() ?? new List<Reservation>(),
 
                     db.Programs?.Select(MapProgram.MapToDomain).ToList() ?? new List<ProgramBL>(),
-                    db.MemberType);
+                    db.MemberType
+                );
             }
             catch (Exception)
             {

@@ -375,5 +375,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "GymRest.Controllers.RunningSessionController",
+    "Method": "GetDetailsById",
+    "RelativePath": "api/RunningSession/GetDetailsById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

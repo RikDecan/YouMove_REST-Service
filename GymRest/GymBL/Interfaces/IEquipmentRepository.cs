@@ -12,12 +12,8 @@ namespace GymBL.Interfaces
         public Equipment GetEquipmentById(int id);
         public List<Equipment> GetEquipments();
         public Equipment CreateEquipment(Equipment equipment);
-
         public Equipment ToggleEquipmentInService(int id);
-
         public Equipment UpdateEquipmentById(int id, Equipment equipment);
 
     }
-
-
 }

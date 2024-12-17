@@ -35,6 +35,9 @@ public class Program
         builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
         builder.Services.AddScoped<ReservationService>();
 
+        builder.Services.AddScoped<IRunningSessionRepository, RunningsSessionRepository>();
+        builder.Services.AddScoped<RunningsSessionRepository>();
+
         // Voeg hier de JsonOptions toe om circulaire referenties te ondersteunen
         builder.Services.AddControllers();
 

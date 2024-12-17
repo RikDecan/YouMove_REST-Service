@@ -15,7 +15,15 @@ namespace GymDL.Mappers
         {
             try
             {
-                return new RunningSessionMain(db.RunningSessionId, db.Date, db.MemberId, db.Duration, db.AvgSpeed);
+                return new RunningSessionMain(
+                    db.RunningSessionId,
+                    db.Date,
+                    db.MemberId,
+                    db.Duration,
+                    db.AvgSpeed,
+
+                    db.Details?.Select(MapRunningSessionDetail.MapToDomain).ToList() ?? new List<RunningSessionDetail>()
+                );
             }
             catch (Exception ex)
             {
@@ -26,7 +34,15 @@ namespace GymDL.Mappers
         {
             try
             {
-                return new RunningSessionMainEF(g.RunningSessionId, g.Date, g.MemberId, g.Duration, g.AvgSpeed);
+                return new RunningSessionMainEF(
+                    g.RunningSessionId, 
+                    g.Date, 
+                    g.MemberId, 
+                    g.Duration, 
+                    g.AvgSpeed, 
+
+                    g.Details?.Select(MapRunningSessionDetail.MapToDL).ToList() ?? new List<RunningSessionDetailEF>()
+                );
             }
             catch (Exception ex)
             {
