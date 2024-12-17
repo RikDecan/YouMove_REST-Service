@@ -25,8 +25,11 @@ namespace GymBL.Services
             }
             catch (Exception ex)
             {
-                throw new Exception("Geef Member", ex);
+                throw new Exception("Geef Id", ex);
             }
         }
+
+
+        
     }
 }

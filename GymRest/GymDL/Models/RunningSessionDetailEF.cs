@@ -21,8 +21,7 @@ namespace GymDL.Models
         public float IntervalSpeed { get; set; }
 
         //nav
-
- 
+         
         public RunningSessionMainEF RunningSessionMain { get; set; }
     }
 }

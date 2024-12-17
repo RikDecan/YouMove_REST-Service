@@ -27,15 +27,165 @@ namespace GymRest.Controllers
         [HttpGet]
         public Member GetMemberById(int id)
         {
-            try
-            {
-                return repo.GetMemberById(id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+           return repo.GetMemberById(id);               
         }
+
+        [Route("GetSessionsFromMembers/{id}")]
+        [HttpGet]
+        
+        public SessionsDTO GetSessionsFromMembers(int id, int month, int year)
+        {
+            Member member = repo.GetMemberById(id);            
+            SessionsDTO sessions = new SessionsDTO();
+            sessions.Cyclingsessions = (List<Cyclingsession>)member.Cyclingsessions.Where(s => s.Date.Month == month && s.Date.Year == year).OrderBy(s => s.Date).ToList();
+
+            sessions.RunningSessions = (List<RunningSessionMain>)member.RunningSessionMains.Where(r => r.Date.Month == month && r.Date.Year == year).OrderBy(r => r.Date).ToList();
+            
+            return sessions;
+        }
+
+
+
+        [Route("GetStatisticalSessionsFromMembers/{id}")]
+        [HttpGet]
+        public SessionsDTO2 GetSessionsFromMembers2(int id)
+        {
+            Member member = repo.GetMemberById(id);
+            SessionsDTO2 sessions = new SessionsDTO2();
+
+            //aantal sessies over beide sessiezs
+            var cyclingSessionsCount = member.Cyclingsessions.Count();
+            var runningSessionsCount = member.RunningSessionMains.Count();
+            var sessionsAmount = cyclingSessionsCount + runningSessionsCount;
+
+
+            //totale duratie
+            var totalCyclingDuration = member.Cyclingsessions.Sum(cs => cs.Duration);
+            var totalRunningDuration = member.RunningSessionMains.Sum(rs => rs.Duration);
+            var sessionsTotalDuration = totalCyclingDuration + totalRunningDuration;
+            
+            //gemiddelde duration
+            var avg_duration = sessionsTotalDuration / sessionsAmount; 
+
+            //langste duration
+            var longestCyclingSessionDuration = member.Cyclingsessions.Max(cs => cs.Duration);
+            var longestRunningSessionDuration = member.RunningSessionMains.Max(rs => rs.Duration);          
+            var longestSessionDuration = Math.Max(longestCyclingSessionDuration, longestRunningSessionDuration);
+
+            //korste duration
+            var shortestCyclingSessionDuration = member.Cyclingsessions.Min(cs => cs.Duration);
+            var shortestRunningSessionDuration = member.RunningSessionMains.Min(rs => rs.Duration);
+            
+
+            var shortestSessionDuration = shortestCyclingSessionDuration;
+            if (shortestRunningSessionDuration < shortestSessionDuration && shortestRunningSessionDuration != double.MaxValue)
+            {
+                shortestSessionDuration = shortestRunningSessionDuration;
+            }
+
+            // DTO invullen
+            sessions.SessionsAmount = sessionsAmount;
+            sessions.TotalDuration = sessionsTotalDuration;
+            sessions.AvgDuration = avg_duration;
+            sessions.LongestSession = longestSessionDuration;
+            sessions.ShortestSession = shortestSessionDuration;
+
+            return sessions;
+        }
+
+        [Route("GetMonthlySessionsFromMembers/{id}")]
+        [HttpGet]
+
+        public List<SessionsDTO3> GetMonthlySessionsFromMembers(int id, int year)
+        {
+            Member member = repo.GetMemberById(id);
+
+            var monthlySessionsList = Enumerable.Range(1, 12)
+                .Select(month => new SessionsDTO3
+
+                {
+                    Month = month,
+                    CyclingSessionsCount = 0,
+                     RunningSessionsCount = 0,
+                    TotalSessionsCount = 0
+                }
+                
+                ).ToList();
+
+            var cyclingSessionsPerMonth = member.Cyclingsessions.Where(cs => cs.Date.Year == year).GroupBy(cs => cs.Date.Month).ToList();
+
+            var runningSessionsPerMonth = member.RunningSessionMains.Where(rs => rs.Date.Year == year).GroupBy(rs => rs.Date.Month).ToList();
+
+            int cyclingIndex = 0;
+            while (cyclingIndex < cyclingSessionsPerMonth.Count)
+            {
+                var cyclingGroup = cyclingSessionsPerMonth[cyclingIndex];
+                var monthEntry = monthlySessionsList.First(m => m.Month == cyclingGroup.Key);
+
+                monthEntry.CyclingSessionsCount = cyclingGroup.Count();
+                monthEntry.TotalSessionsCount += cyclingGroup.Count();
+                cyclingIndex++;
+            }
+
+            int runningIndex = 0;
+            while (runningIndex < runningSessionsPerMonth.Count)
+            {
+                var runningGroup = runningSessionsPerMonth[runningIndex];
+                var monthEntry = monthlySessionsList.First(m => m.Month == runningGroup.Key);
+                monthEntry.RunningSessionsCount = runningGroup.Count();
+                monthEntry.TotalSessionsCount += runningGroup.Count();
+                runningIndex++;
+            }
+
+            return monthlySessionsList.OrderBy(m => m.Month).ToList();
+        }
+
+
+
+        [Route("GetSessionsFromTrainingType/{id}")]
+        [HttpGet]
+
+        public List<TrainingTypeSessionsDTO> GetCyclingSessionsCountByTrainingType(int id, int year)
+        {
+            Member member = repo.GetMemberById(id);
+
+            // Define all possible training types
+            var trainingTypes = new[] { "fun", "endurance", "interval", "recovery" };
+
+            // Create a list of all training types with zero sessions
+            var trainingTypeSessionsList = trainingTypes
+                .Select(type => new TrainingTypeSessionsDTO
+                {
+                    TrainingType = type,
+                    SessionsCount = 0
+                })
+                .ToList();
+
+            // Group cycling sessions by training type for the specified year
+            var cyclingSessionsByTrainingType = member.Cyclingsessions
+                .Where(cs => cs.Date.Year == year)
+                .GroupBy(cs => cs.Trainingtype)
+                .ToList();
+
+            // Update sessions counts for each training type
+            int trainingTypeIndex = 0;
+            while (trainingTypeIndex < cyclingSessionsByTrainingType.Count)
+            {
+                var trainingTypeGroup = cyclingSessionsByTrainingType[trainingTypeIndex];
+                var typeEntry = trainingTypeSessionsList
+                    .FirstOrDefault(t => t.TrainingType.ToLower() == trainingTypeGroup.Key.ToLower());
+
+                if (typeEntry != null)
+                {
+                    typeEntry.SessionsCount = trainingTypeGroup.Count();
+                }
+
+                trainingTypeIndex++;
+            }
+
+            return trainingTypeSessionsList;
+        }
+
 
         [Route("GetMembers")]
         [HttpGet]

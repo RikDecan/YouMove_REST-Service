@@ -32,7 +32,7 @@ namespace GymDL.Models
         public int Duration { get; set; }
         public float AvgSpeed { get; set; }
 
-        // Navigation P
+        // Nav
         public MemberEF Member { get; set; }
         public ICollection<RunningSessionDetailEF> Details { get; set; }
     }

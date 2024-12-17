@@ -14,5 +14,7 @@ namespace GymBL.Interfaces
         public Member UpdateMemberById(int id, Member member);
         public Member CreateMember(Member member);
         public bool RemoveMember(int id);
+
+
     }
 }
