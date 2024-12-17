@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [members, setMembers] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchMembers = async () => {
+      try {
+        const response = await fetch("https://localhost:7293/api/Member/GetMembers");
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        setMembers(data); // Zet de opgehaalde data in state
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+
+    fetchMembers();
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1>Members</h1>
+      {error ? (
+        <p style={{ color: "red" }}>Error: {error}</p>
+      ) : (
+        <ul>
+          {members.map((member) => (
+            <li key={member.memberId}>
+              <strong>Name:</strong> {member.firstName} {member.lastName} <br />
+              <strong>Email:</strong> {member.email} <br />
+              <strong>Address:</strong> {member.address} <br />
+              <strong>Birthday:</strong> {new Date(member.birthday).toLocaleDateString()}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }
 
-export default App
+export default App;
