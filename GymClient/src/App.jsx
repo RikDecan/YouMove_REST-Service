@@ -36,7 +36,7 @@ function App() {
           throw new Error(`Failed to fetch equipments: ${response.status}`);
         }
         const data = await response.json();
-        setEquipments(data.filter((equipment) => !equipment.inService));
+        setEquipments(data.filter((equipment) => !equipment.inRepair));
       } catch (err) {
         setError(err.message);
       }

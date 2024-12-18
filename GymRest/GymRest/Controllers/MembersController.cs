@@ -32,15 +32,54 @@ namespace GymRest.Controllers
 
         [Route("GetSessionsFromMembers/{id}")]
         [HttpGet]
-        
+
         public SessionsDTO GetSessionsFromMembers(int id, int month, int year)
         {
-            Member member = repo.GetMemberById(id);            
+            Member member = repo.GetMemberById(id);
             SessionsDTO sessions = new SessionsDTO();
-            sessions.Cyclingsessions = (List<Cyclingsession>)member.Cyclingsessions.Where(s => s.Date.Month == month && s.Date.Year == year).OrderBy(s => s.Date).ToList();
 
-            sessions.RunningSessions = (List<RunningSessionMain>)member.RunningSessionMains.Where(r => r.Date.Month == month && r.Date.Year == year).OrderBy(r => r.Date).ToList();
-            
+            // Get cycling sessions and calculate impact
+            var cyclingSessions = member.Cyclingsessions
+                .Where(s => s.Date.Month == month && s.Date.Year == year)
+                .OrderBy(s => s.Date)
+                .Select(s =>
+                {
+                    string impact;
+                    if (s.Avg_watt > 200)
+                    {
+                        impact = "high";
+                    }
+                    else if (s.Avg_watt >= 150)
+                    {
+                        impact = "medium";
+                    }
+                    else// avg_watt < 150
+                    {
+                        impact = s.Duration > 90 ? "medium" : "low";
+                    }
+
+                    // Create new cycling session with impact
+                    return new Cyclingsession(
+                        s.CyclingsessionId,
+                        s.Date,
+                        s.Duration,
+                        s.Avg_watt,
+                        s.Max_watt,
+                        s.Avg_cadence,
+                        s.Max_cadence,
+                        s.Trainingtype,
+                        s.Comment + $"Impact: {impact} ",
+                        s.MemberId
+                    );
+                })
+                .ToList();
+
+            sessions.Cyclingsessions = cyclingSessions;
+            sessions.RunningSessions = member.RunningSessionMains
+                .Where(r => r.Date.Month == month && r.Date.Year == year)
+                .OrderBy(r => r.Date)
+                .ToList();
+
             return sessions;
         }
 
