@@ -16,7 +16,7 @@ namespace GymDL.Mappers
         {
             try
             {
-                return new Equipment(db.EquipmentId, db.DeviceType, db.InService);
+                return new Equipment(db.EquipmentId, db.DeviceType, db.InRepair);
             }
             catch (Exception ex)
             {
@@ -27,7 +27,7 @@ namespace GymDL.Mappers
         {
             try
             {
-                return new EquipmentEF(g.EquipmentId, g.DeviceType, g.InService);
+                return new EquipmentEF(g.EquipmentId, g.DeviceType, g.InRepair);
             }
             catch (Exception ex)
             {

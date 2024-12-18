@@ -2,13 +2,13 @@
 {
     public class EquipmentDTO
     {
-        public EquipmentDTO(string deviceType, bool inService)
+        public EquipmentDTO(string deviceType, bool inRepair)
         {
             DeviceType = deviceType;
-            InService = inService;
+            InRepair = inRepair;
         }
 
         public string DeviceType { get; set; }
-        public bool InService { get; set; }
+        public bool InRepair { get; set; }
     }
 }

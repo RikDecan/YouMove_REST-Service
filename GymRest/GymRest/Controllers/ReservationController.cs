@@ -31,7 +31,7 @@ namespace GymRest.Controllers
                 (
                     reservationDTO.EquipmentId,
                     reservationDTO.TimeSlotId,
-                    reservationDTO.Date,+
+                    reservationDTO.Date,
                     reservationDTO.MemberId
                 );
 

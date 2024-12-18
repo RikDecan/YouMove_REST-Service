@@ -8,14 +8,14 @@ namespace GymDL.Models
         {
         }
 
-        public EquipmentEF(int equipmentId, string deviceType, bool inService)
+        public EquipmentEF(int equipmentId, string deviceType, bool inRepair)
         {
             EquipmentId = equipmentId;
             DeviceType = deviceType;
-            InService = inService;
+            InRepair = inRepair;
         }
 
-        public EquipmentEF(int equipmentId, string deviceType, bool inService, ICollection<ReservationEF> reservations) : this(equipmentId, deviceType, inService)
+        public EquipmentEF(int equipmentId, string deviceType, bool inRepair, ICollection<ReservationEF> reservations) : this(equipmentId, deviceType, inRepair)
         {
             Reservations = reservations;
         }
@@ -23,7 +23,7 @@ namespace GymDL.Models
         [Key]
         public int EquipmentId { get; set; }
         public string DeviceType { get; set; }
-        public bool InService { get; set; }
+        public bool InRepair { get; set; }
 
         // Navigation Properties
         public ICollection<ReservationEF> Reservations { get; set; }

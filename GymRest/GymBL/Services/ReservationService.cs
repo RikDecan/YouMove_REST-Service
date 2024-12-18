@@ -81,7 +81,7 @@ namespace GymBL.Services
             
 
 
-            if (equipment.InService)
+            if (equipment.InRepair)
             {
                 throw new Exception("Equipment out of service (for the time being), pick a different Device/Equipment");
             }

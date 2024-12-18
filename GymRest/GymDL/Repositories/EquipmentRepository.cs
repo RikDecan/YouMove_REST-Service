@@ -95,7 +95,7 @@ namespace GymDL.Repositories
                     throw new MemberNotFoundException(id);
                 }
 
-                equipmentDB.InService = !equipmentDB.InService;
+                equipmentDB.InRepair = !equipmentDB.InRepair;
 
                 _context.SaveChanges();
 
@@ -106,7 +106,5 @@ namespace GymDL.Repositories
                 throw new Exception("Error toggling InService status", ex);
             }
         }
-
-
     }
 }

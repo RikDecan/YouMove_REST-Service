@@ -54,7 +54,7 @@ namespace GymRest.Controllers
                 Equipment equipment = new Equipment(
 
                 equipmentDTO.DeviceType,
-                equipmentDTO.InService
+                equipmentDTO.InRepair
 
                     );
                 return repo.CreateEquipment(equipment);
@@ -78,29 +78,5 @@ namespace GymRest.Controllers
                 throw new Exception(ex.Message);
             }
         }
-
-        //[Route("UpdateEquipment/{id}")]
-        //[HttpPut]
-
-        //public Equipment UpdateEquipmentById(int id, [FromBody] EquipmentDTO equipmentDTO) 
-        //{
-        //    try
-        //    {
-        //        Equipment equipment = new Equipment(
-
-        //        equipmentDTO.InService
-
-
-        //            );
-        //        return repo.UpdateEquipmentById(id, equipment);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
-        //}
-
-
-
     }
 }
