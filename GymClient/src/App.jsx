@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import "./App.css"; // Import de CSS
 
 function App() {
   const [members, setMembers] = useState([]);
@@ -11,7 +12,6 @@ function App() {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
-  // Fetch members
   useEffect(() => {
     const fetchMembers = async () => {
       try {
@@ -28,7 +28,6 @@ function App() {
     fetchMembers();
   }, []);
 
-  // Fetch equipment
   useEffect(() => {
     const fetchEquipments = async () => {
       try {
@@ -37,7 +36,7 @@ function App() {
           throw new Error(`Failed to fetch equipments: ${response.status}`);
         }
         const data = await response.json();
-        setEquipments(data.filter((equipment) => !equipment.inService)); // Filter "inService: false"
+        setEquipments(data.filter((equipment) => !equipment.inService));
       } catch (err) {
         setError(err.message);
       }
@@ -80,17 +79,18 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "500px", margin: "0 auto" }}>
-      <h1>Create Reservation</h1>
+    <div className="container">
+      <h1 className="heading">YouMove</h1>
+      <h2 className="subHeading">Reservation Service</h2>
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      {success && <p style={{ color: "green" }}>{success}</p>}
+      {error && <p className="error">{error}</p>}
+      {success && <p className="success">{success}</p>}
 
       <form onSubmit={handleSubmit}>
-        {/* Member Dropdown */}
-        <label>
-          Select Member:
+        <div className="form-group">
+          <label className="label">Select Member:</label>
           <select
+            className="select"
             value={selectedMember}
             onChange={(e) => setSelectedMember(e.target.value)}
             required
@@ -102,13 +102,12 @@ function App() {
               </option>
             ))}
           </select>
-        </label>
-        <br />
+        </div>
 
-        {/* Equipment Dropdown */}
-        <label>
-          Select Equipment:
+        <div className="form-group">
+          <label className="label">Select Equipment:</label>
           <select
+            className="select"
             value={selectedEquipment}
             onChange={(e) => setSelectedEquipment(e.target.value)}
             required
@@ -120,25 +119,23 @@ function App() {
               </option>
             ))}
           </select>
-        </label>
-        <br />
+        </div>
 
-        {/* Date Picker */}
-        <label>
-          Select Date:
+        <div className="form-group">
+          <label className="label">Select Date:</label>
           <input
             type="date"
+            className="input"
             value={selectedDate}
             onChange={(e) => setSelectedDate(e.target.value)}
             required
           />
-        </label>
-        <br />
+        </div>
 
-        {/* Time Slot Dropdown */}
-        <label>
-          Select Time Slot:
+        <div className="form-group">
+          <label className="label">Select Time Slot:</label>
           <select
+            className="select"
             value={selectedTimeSlot}
             onChange={(e) => setSelectedTimeSlot(e.target.value)}
             required
@@ -149,10 +146,9 @@ function App() {
               </option>
             ))}
           </select>
-        </label>
-        <br />
+        </div>
 
-        <button type="submit" style={{ marginTop: "20px" }}>
+        <button type="submit" className="button">
           Create Reservation
         </button>
       </form>
