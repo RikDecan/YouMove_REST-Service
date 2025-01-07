@@ -12,7 +12,7 @@ namespace GymBL.Interfaces
         public Reservation AddReservation(Reservation reservation);
         public Reservation UpdateReservation(int id, Reservation reservation);
 
-        //testen hier -> doe weg als niet werken mattie je weet ze
+        //testen hier -> doe weg als ze niet werken
         Equipment GetEquipmentById(int equipmentId);
         TimeSlot GetTimeSlotById(int timeSlotId);
         List<Reservation> GetReservationsByMemberAndDate(int memberId, DateTime date);

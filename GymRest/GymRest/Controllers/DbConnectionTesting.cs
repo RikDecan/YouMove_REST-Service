@@ -20,7 +20,6 @@ namespace GymRest.Controllers
         {
             try
             {
-                // Attempt a real query to verify the connection
                 var memberCount = _context.Members.Count();
 
                 return Ok(new

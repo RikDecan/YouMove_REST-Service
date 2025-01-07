@@ -15,7 +15,7 @@ public class Program
         {
             options.AddPolicy("AllowReactApp", policy =>
             {
-                policy.WithOrigins("http://localhost:5173") // Gebruik de juiste URL (http of https)
+                policy.WithOrigins("http://localhost:5173") 
 
                       .AllowAnyMethod()
                       .AllowAnyHeader();
@@ -39,16 +39,13 @@ public class Program
         builder.Services.AddScoped<IRunningSessionRepository, RunningsSessionRepository>();
         builder.Services.AddScoped<RunningSessionServices>();
 
-        // Voeg hier de JsonOptions toe om circulaire referenties te ondersteunen
         builder.Services.AddControllers();
 
-        // Add services to the container
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
         var app = builder.Build();
 
-        // Configure the HTTP request pipeline
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
@@ -57,7 +54,6 @@ public class Program
 
         app.UseHttpsRedirection();
 
-        // Use CORS middleware before authorization
         app.UseCors("AllowReactApp");
 
         app.UseAuthorization();
