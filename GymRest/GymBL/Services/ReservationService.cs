@@ -77,8 +77,7 @@ namespace GymBL.Services
             {
                 throw new Exception("Equipment doesn't  exist");
             }
-
-            
+                  
 
 
             if (equipment.InRepair)

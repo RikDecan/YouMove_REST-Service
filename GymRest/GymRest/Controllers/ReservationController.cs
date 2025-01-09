@@ -11,7 +11,7 @@ namespace GymRest.Controllers
     [ApiController]
     public class ReservationController : ControllerBase
     {
-        private ReservationService repo;
+        private ReservationService repo; //noem dit service ipv repo
 
         
 
@@ -26,7 +26,8 @@ namespace GymRest.Controllers
 
 
         public Reservation AddReservation([FromBody] ReservationDTO reservationDTO)
-        {            
+        {
+          
                 Reservation reservation = new Reservation
                 (
                     reservationDTO.EquipmentId,

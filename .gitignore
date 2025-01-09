@@ -1,1 +1,10 @@
+# Ignore build directories
+bin/
+obj/
+
+# Ignore Visual Studio folders
 .vs/
+
+# Optioneel: Visual Studio gebruikersinstellingen
+*.user
+*.suo

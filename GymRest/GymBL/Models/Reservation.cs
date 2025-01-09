@@ -20,9 +20,9 @@
         }
 
         public int reservationId { get; set; }
-        public int EquipmentId { get; set; }
-        public int TimeSlotId { get; set; }
-        public DateTime Date { get; set; }
-        public int MemberId { get; set; }
+        public int EquipmentId { get; set; } //make Object instance
+        public int TimeSlotId { get; set; } //make Object instance
+        public DateTime Date { get; set; } 
+        public int MemberId { get; set; } //make Object instance
     }
 }
