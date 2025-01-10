@@ -16,18 +16,18 @@ namespace GymRest.Controllers
     [ApiController]
     public class MemberController : ControllerBase
     {
-        private MemberService repo;
+        private MemberService service;
 
-        public MemberController(MemberService repo)
+        public MemberController(MemberService service)
         {
-            this.repo = repo;
+            this.service = service;
         }
 
         [Route("GetMemberById/{id}")]
         [HttpGet]
         public Member GetMemberById(int id)
         {
-           return repo.GetMemberById(id);               
+           return service.GetMemberById(id);               
         }
 
         [Route("GetSessionsFromMembers/{id}")]
@@ -35,7 +35,7 @@ namespace GymRest.Controllers
 
         public SessionsDTO GetSessionsFromMembers(int id, int month, int year)
         {
-            Member member = repo.GetMemberById(id);
+            Member member = service.GetMemberById(id);
             SessionsDTO sessions = new SessionsDTO();
 
             // Get cycling sessions and calculate impact
@@ -89,7 +89,7 @@ namespace GymRest.Controllers
         [HttpGet]
         public SessionsDTO2 GetSessionsFromMembers2(int id)
         {
-            Member member = repo.GetMemberById(id);
+            Member member = service.GetMemberById(id);
             SessionsDTO2 sessions = new SessionsDTO2();
 
             //aantal sessies over beide sessiezs
@@ -137,7 +137,7 @@ namespace GymRest.Controllers
 
         public List<SessionsDTO3> GetMonthlySessionsFromMembers(int id, int year)
         {
-            Member member = repo.GetMemberById(id);
+            Member member = service.GetMemberById(id);
 
             var monthlySessionsList = Enumerable.Range(1, 12)
                 .Select(month => new SessionsDTO3
@@ -186,7 +186,7 @@ namespace GymRest.Controllers
 
         public List<TrainingTypeSessionsDTO> GetCyclingSessionsCountByTrainingType(int id, int year)
         {
-            Member member = repo.GetMemberById(id);
+            Member member = service.GetMemberById(id);
 
             var trainingTypes = new[] { "fun", "endurance", "interval", "recovery" };
 
@@ -226,14 +226,14 @@ namespace GymRest.Controllers
         [HttpGet]
         public List<Member> GetMembers()
         {
-            return repo.GetMembers();
+            return service.GetMembers();
         }
 
         [Route("RemoveMember/{id}")]
         [HttpDelete]
         public bool RemoveMember(int id)
         {
-            return repo.RemoveMember(id);
+            return service.RemoveMember(id);
         }
 
         [Route("NieuweMember")]
@@ -250,7 +250,7 @@ namespace GymRest.Controllers
                 memberDTO.Interests,
                 memberDTO.Membertype
                 );
-                return repo.CreateMember(member);
+                return service.CreateMember(member);
         }
 
         [Route("UpdateMember/{id}")]
@@ -271,7 +271,7 @@ namespace GymRest.Controllers
                 memberDTO.Membertype
 
                     );
-                return repo.UpdateMemberById(id, member);
+                return service.UpdateMemberById(id, member);
             }
             catch (Exception ex)
             {

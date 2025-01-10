@@ -11,13 +11,13 @@ namespace GymRest.Controllers
     [ApiController]
     public class ReservationController : ControllerBase
     {
-        private ReservationService repo; //noem dit service ipv repo
+        private ReservationService service; //noem dit service ipv service
 
         
 
-        public ReservationController(ReservationService repo)
+        public ReservationController(ReservationService service)
         {
-            this.repo = repo;
+            this.service = service;
         }
 
 
@@ -36,7 +36,7 @@ namespace GymRest.Controllers
                     reservationDTO.MemberId
                 );
 
-                return repo.AddReservation(reservation);            
+                return service.AddReservation(reservation);            
         }
 
         [Route("UpdateReservation/{id}")]
@@ -52,7 +52,7 @@ namespace GymRest.Controllers
                     reservationDTO.MemberId
                 );
 
-                return repo.UpdateReservation(id, reservation);
+                return service.UpdateReservation(id, reservation);
 
             
         }
@@ -61,7 +61,7 @@ namespace GymRest.Controllers
         [HttpDelete]
         public bool RemoveReservation(int id)
         {
-            return repo.RemoveReservation(id);
+            return service.RemoveReservation(id);
         }
 
     }

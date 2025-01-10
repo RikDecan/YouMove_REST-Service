@@ -17,11 +17,11 @@ namespace GymRest.Controllers
     [ApiController]
     public class RunningSessionController : ControllerBase
     {
-        private RunningSessionServices repo;
+        private RunningSessionServices service;
 
-        public RunningSessionController(RunningSessionServices repo)
+        public RunningSessionController(RunningSessionServices service)
         {
-            this.repo = repo;
+            this.service = service;
         }
 
         [Route("GetDetailsById/{id}")]
@@ -29,7 +29,7 @@ namespace GymRest.Controllers
 
         public IActionResult GetDetailsById(int id)
         {
-            var existingRunningSession = repo.GetDetailsById(id);
+            var existingRunningSession = service.GetDetailsById(id);
             if (existingRunningSession == null)
             {
                 throw new Exception("Running session not found");

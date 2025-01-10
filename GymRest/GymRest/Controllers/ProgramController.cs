@@ -12,11 +12,11 @@ namespace GymRest.Controllers
     [ApiController]
     public class ProgramController : ControllerBase
     {
-        private ProgramService repo;
+        private ProgramService service;
 
-        public ProgramController(ProgramService repo) 
+        public ProgramController(ProgramService service) 
         {
-            this.repo = repo;
+            this.service = service;
         }
 
 
@@ -37,7 +37,7 @@ namespace GymRest.Controllers
                     programDTO.MaxMembers
                 );
 
-                return repo.AddProgram(programBL);
+                return service.AddProgram(programBL);
             }
             catch (Exception ex)
             {
@@ -61,7 +61,7 @@ namespace GymRest.Controllers
                     programDTO.MaxMembers
                 );
 
-                return repo.UpdateProgram(id, programBL);
+                return service.UpdateProgram(id, programBL);
 
             }
             catch (Exception ex)

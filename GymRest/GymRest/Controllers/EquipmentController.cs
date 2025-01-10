@@ -12,21 +12,19 @@ namespace GymRest.Controllers
     public class EquipmentController : ControllerBase
     {
 
-        private EquipmentService repo;
+        private EquipmentService service;
 
-        public EquipmentController(EquipmentService repo)
+        public EquipmentController(EquipmentService service)
         {
-            this.repo = repo;
+            this.service = service;
         }
-
-
 
         [HttpGet("{id}")]
         public Equipment GetEquipmentById(int id)
         {
             try
             {
-                return repo.GetEquipmentById(id);
+                return service.GetEquipmentById(id);
             }
             catch (Exception ex)
             {
@@ -39,7 +37,7 @@ namespace GymRest.Controllers
 
         public List<Equipment> GetEquipments()
         {
-            return repo.GetEquipments();
+            return service.GetEquipments();
         }
 
 
@@ -57,7 +55,7 @@ namespace GymRest.Controllers
                 equipmentDTO.InRepair
 
                     );
-                return repo.CreateEquipment(equipment);
+                return service.CreateEquipment(equipment);
             }
             catch (Exception ex)
             {
@@ -71,7 +69,7 @@ namespace GymRest.Controllers
         {
             try
             {
-                return repo.ToggleEquipmentInService(id);
+                return service.ToggleEquipmentInService(id);
             }
             catch (Exception ex)
             {
